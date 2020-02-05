@@ -1,0 +1,14 @@
+Hadoop MapReduce Triangle Count
+Fall 2019
+
+Code author
+-----------
+Dheeraj Dhall
+
+
+
+This Project has Four main Folders at the root
+1) countstatistics : Represents a program to calculate the Path2 Cardinality
+2) Logs : Represent the Syslog from the runs
+3) reducesidejoin: Represents a program to run the RS-Join algorithm
+4) replicatedjoin: Represents a program to rung the REP-Join algorithm
