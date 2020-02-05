@@ -1,0 +1,1177 @@
+2019-11-03 23:05:55,934 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:06:00,418 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 1
+2019-11-03 23:06:00,433 INFO com.hadoop.compression.lzo.GPLNativeCodeLoader (main): Loaded native gpl library
+2019-11-03 23:06:00,436 INFO com.hadoop.compression.lzo.LzoCodec (main): Successfully loaded & initialized native-lzo library [hadoop-lzo rev 7e6c862e89bc8db32c064454a55af74ddff73bae]
+2019-11-03 23:06:01,095 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:1
+2019-11-03 23:06:01,289 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0001
+2019-11-03 23:06:01,984 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0001
+2019-11-03 23:06:02,140 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0001/
+2019-11-03 23:06:02,156 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0001
+2019-11-03 23:06:13,474 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0001 running in uber mode : false
+2019-11-03 23:06:13,475 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:06:27,593 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:06:38,659 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:06:45,687 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 33%
+2019-11-03 23:06:46,692 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 60%
+2019-11-03 23:06:47,697 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 87%
+2019-11-03 23:06:48,701 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:06:49,711 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0001 completed successfully
+2019-11-03 23:06:49,866 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 55
+	File System Counters
+		FILE: Number of bytes read=10136395
+		FILE: Number of bytes written=22994422
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=96
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=1
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=1
+		S3: Number of bytes written=21772917
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed reduce tasks=1
+		Launched map tasks=1
+		Launched reduce tasks=16
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=545808
+		Total time spent by all reduces in occupied slots (ms)=21937920
+		Total time spent by all map tasks (ms)=11371
+		Total time spent by all reduce tasks (ms)=228520
+		Total vcore-milliseconds taken by all map tasks=11371
+		Total vcore-milliseconds taken by all reduce tasks=228520
+		Total megabyte-milliseconds taken by all map tasks=17465856
+		Total megabyte-milliseconds taken by all reduce tasks=702013440
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1000001
+		Map output bytes=20772914
+		Map output materialized bytes=10136335
+		Input split bytes=96
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000001
+		Reduce shuffle bytes=10136335
+		Reduce input records=1000001
+		Reduce output records=1000001
+		Spilled Records=2000002
+		Shuffled Maps =15
+		Failed Shuffles=0
+		Merged Map outputs=15
+		GC time elapsed (ms)=6368
+		CPU time spent (ms)=80740
+		Physical memory (bytes) snapshot=6781886464
+		Virtual memory (bytes) snapshot=73261977600
+		Total committed heap usage (bytes)=6013583360
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1
+	File Output Format Counters 
+		Bytes Written=21772917
+2019-11-03 23:06:49,970 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:06:50,205 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 15
+2019-11-03 23:06:50,236 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00000' for reading
+2019-11-03 23:06:50,422 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00001' for reading
+2019-11-03 23:06:50,582 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00002' for reading
+2019-11-03 23:06:50,687 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00003' for reading
+2019-11-03 23:06:50,785 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00004' for reading
+2019-11-03 23:06:50,863 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00005' for reading
+2019-11-03 23:06:50,949 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00006' for reading
+2019-11-03 23:06:51,020 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00007' for reading
+2019-11-03 23:06:51,104 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00008' for reading
+2019-11-03 23:06:51,193 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00009' for reading
+2019-11-03 23:06:51,290 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00010' for reading
+2019-11-03 23:06:51,368 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00011' for reading
+2019-11-03 23:06:51,449 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00012' for reading
+2019-11-03 23:06:51,511 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00013' for reading
+2019-11-03 23:06:51,591 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-0/part-r-00014' for reading
+2019-11-03 23:06:51,723 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:30
+2019-11-03 23:06:51,767 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0002
+2019-11-03 23:06:51,807 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0002
+2019-11-03 23:06:51,829 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0002/
+2019-11-03 23:06:51,829 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0002
+2019-11-03 23:07:02,003 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0002 running in uber mode : false
+2019-11-03 23:07:02,003 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:07:21,198 INFO org.apache.hadoop.mapreduce.Job (main):  map 3% reduce 0%
+2019-11-03 23:07:22,206 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-11-03 23:07:31,248 INFO org.apache.hadoop.mapreduce.Job (main):  map 13% reduce 0%
+2019-11-03 23:07:32,252 INFO org.apache.hadoop.mapreduce.Job (main):  map 22% reduce 0%
+2019-11-03 23:07:33,259 INFO org.apache.hadoop.mapreduce.Job (main):  map 23% reduce 0%
+2019-11-03 23:07:34,263 INFO org.apache.hadoop.mapreduce.Job (main):  map 30% reduce 0%
+2019-11-03 23:07:35,269 INFO org.apache.hadoop.mapreduce.Job (main):  map 36% reduce 0%
+2019-11-03 23:07:36,278 INFO org.apache.hadoop.mapreduce.Job (main):  map 63% reduce 0%
+2019-11-03 23:07:37,282 INFO org.apache.hadoop.mapreduce.Job (main):  map 83% reduce 0%
+2019-11-03 23:07:38,287 INFO org.apache.hadoop.mapreduce.Job (main):  map 90% reduce 0%
+2019-11-03 23:07:39,291 INFO org.apache.hadoop.mapreduce.Job (main):  map 99% reduce 0%
+2019-11-03 23:07:40,295 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:07:44,312 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:07:54,354 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 27%
+2019-11-03 23:07:55,357 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 67%
+2019-11-03 23:07:56,361 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 73%
+2019-11-03 23:07:58,374 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 93%
+2019-11-03 23:07:59,378 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:08:00,386 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0002 completed successfully
+2019-11-03 23:08:00,393 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=16552094
+		FILE: Number of bytes written=40604270
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3210
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=30
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=21943890
+		S3: Number of bytes written=25771934
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=30
+		Launched reduce tasks=16
+		Other local map tasks=30
+		Total time spent by all maps in occupied slots (ms)=41858592
+		Total time spent by all reduces in occupied slots (ms)=25052256
+		Total time spent by all map tasks (ms)=872054
+		Total time spent by all reduce tasks (ms)=260961
+		Total vcore-milliseconds taken by all map tasks=872054
+		Total vcore-milliseconds taken by all reduce tasks=260961
+		Total megabyte-milliseconds taken by all map tasks=1339474944
+		Total megabyte-milliseconds taken by all reduce tasks=801672192
+	Map-Reduce Framework
+		Map input records=1000001
+		Map output records=2000002
+		Map output bytes=42656942
+		Map output materialized bytes=16384526
+		Input split bytes=3210
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000002
+		Reduce shuffle bytes=16384526
+		Reduce input records=2000002
+		Reduce output records=1000001
+		Spilled Records=4000004
+		Shuffled Maps =450
+		Failed Shuffles=0
+		Merged Map outputs=450
+		GC time elapsed (ms)=28491
+		CPU time spent (ms)=278150
+		Physical memory (bytes) snapshot=24850735104
+		Virtual memory (bytes) snapshot=169411235840
+		Total committed heap usage (bytes)=21731737600
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=21943890
+	File Output Format Counters 
+		Bytes Written=25771934
+	pr.PageRank$ZERO_PROBABILITY
+		COUNTER=10000000
+2019-11-03 23:08:00,461 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:08:00,607 WARN org.apache.hadoop.hdfs.DataStreamer (DataStreamer for file /tmp/hadoop-yarn/staging/hadoop/.staging/job_1572822267050_0003/job.jar): Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:973)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:624)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:801)
+2019-11-03 23:08:00,676 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 15
+2019-11-03 23:08:00,694 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00000' for reading
+2019-11-03 23:08:00,785 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00001' for reading
+2019-11-03 23:08:00,874 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00002' for reading
+2019-11-03 23:08:00,963 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00003' for reading
+2019-11-03 23:08:01,043 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00004' for reading
+2019-11-03 23:08:01,130 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00005' for reading
+2019-11-03 23:08:01,219 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00006' for reading
+2019-11-03 23:08:01,279 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00007' for reading
+2019-11-03 23:08:01,370 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00008' for reading
+2019-11-03 23:08:01,441 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00009' for reading
+2019-11-03 23:08:01,505 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00010' for reading
+2019-11-03 23:08:01,582 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00011' for reading
+2019-11-03 23:08:01,663 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00012' for reading
+2019-11-03 23:08:01,744 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00013' for reading
+2019-11-03 23:08:01,819 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-1/part-r-00014' for reading
+2019-11-03 23:08:01,973 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:30
+2019-11-03 23:08:02,012 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0003
+2019-11-03 23:08:02,047 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0003
+2019-11-03 23:08:02,054 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0003/
+2019-11-03 23:08:02,054 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0003
+2019-11-03 23:08:12,155 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0003 running in uber mode : false
+2019-11-03 23:08:12,156 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:08:31,277 INFO org.apache.hadoop.mapreduce.Job (main):  map 3% reduce 0%
+2019-11-03 23:08:32,281 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-11-03 23:08:41,317 INFO org.apache.hadoop.mapreduce.Job (main):  map 13% reduce 0%
+2019-11-03 23:08:42,322 INFO org.apache.hadoop.mapreduce.Job (main):  map 19% reduce 0%
+2019-11-03 23:08:43,329 INFO org.apache.hadoop.mapreduce.Job (main):  map 24% reduce 0%
+2019-11-03 23:08:44,333 INFO org.apache.hadoop.mapreduce.Job (main):  map 27% reduce 0%
+2019-11-03 23:08:45,337 INFO org.apache.hadoop.mapreduce.Job (main):  map 36% reduce 0%
+2019-11-03 23:08:46,340 INFO org.apache.hadoop.mapreduce.Job (main):  map 49% reduce 0%
+2019-11-03 23:08:47,345 INFO org.apache.hadoop.mapreduce.Job (main):  map 73% reduce 0%
+2019-11-03 23:08:48,349 INFO org.apache.hadoop.mapreduce.Job (main):  map 90% reduce 0%
+2019-11-03 23:08:49,352 INFO org.apache.hadoop.mapreduce.Job (main):  map 93% reduce 0%
+2019-11-03 23:08:50,355 INFO org.apache.hadoop.mapreduce.Job (main):  map 99% reduce 0%
+2019-11-03 23:08:51,365 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:08:55,380 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:09:03,414 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 13%
+2019-11-03 23:09:04,417 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 33%
+2019-11-03 23:09:05,425 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 53%
+2019-11-03 23:09:06,429 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 73%
+2019-11-03 23:09:07,432 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 87%
+2019-11-03 23:09:08,435 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 93%
+2019-11-03 23:09:09,438 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:09:11,453 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0003 completed successfully
+2019-11-03 23:09:11,456 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=16920029
+		FILE: Number of bytes written=41302671
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3210
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=30
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=25950307
+		S3: Number of bytes written=28779933
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=30
+		Launched reduce tasks=16
+		Other local map tasks=30
+		Total time spent by all maps in occupied slots (ms)=43066704
+		Total time spent by all reduces in occupied slots (ms)=24536256
+		Total time spent by all map tasks (ms)=897223
+		Total time spent by all reduce tasks (ms)=255586
+		Total vcore-milliseconds taken by all map tasks=897223
+		Total vcore-milliseconds taken by all reduce tasks=255586
+		Total megabyte-milliseconds taken by all map tasks=1378134528
+		Total megabyte-milliseconds taken by all reduce tasks=785160192
+	Map-Reduce Framework
+		Map input records=1000001
+		Map output records=2000002
+		Map output bytes=50654976
+		Map output materialized bytes=16714992
+		Input split bytes=3210
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000002
+		Reduce shuffle bytes=16714992
+		Reduce input records=2000002
+		Reduce output records=1000001
+		Spilled Records=4000004
+		Shuffled Maps =450
+		Failed Shuffles=0
+		Merged Map outputs=450
+		GC time elapsed (ms)=29017
+		CPU time spent (ms)=283650
+		Physical memory (bytes) snapshot=24953073664
+		Virtual memory (bytes) snapshot=169439342592
+		Total committed heap usage (bytes)=21741699072
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=25950307
+	File Output Format Counters 
+		Bytes Written=28779933
+	pr.PageRank$ZERO_PROBABILITY
+		COUNTER=10008000
+2019-11-03 23:09:11,522 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:09:11,708 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 15
+2019-11-03 23:09:11,717 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00000' for reading
+2019-11-03 23:09:11,818 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00001' for reading
+2019-11-03 23:09:11,910 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00002' for reading
+2019-11-03 23:09:11,998 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00003' for reading
+2019-11-03 23:09:12,067 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00004' for reading
+2019-11-03 23:09:12,154 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00005' for reading
+2019-11-03 23:09:12,232 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00006' for reading
+2019-11-03 23:09:12,291 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00007' for reading
+2019-11-03 23:09:12,349 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00008' for reading
+2019-11-03 23:09:12,414 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00009' for reading
+2019-11-03 23:09:12,497 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00010' for reading
+2019-11-03 23:09:12,565 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00011' for reading
+2019-11-03 23:09:12,624 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00012' for reading
+2019-11-03 23:09:12,692 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00013' for reading
+2019-11-03 23:09:12,766 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-2/part-r-00014' for reading
+2019-11-03 23:09:12,884 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:30
+2019-11-03 23:09:12,928 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0004
+2019-11-03 23:09:12,968 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0004
+2019-11-03 23:09:12,980 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0004/
+2019-11-03 23:09:12,980 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0004
+2019-11-03 23:09:23,063 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0004 running in uber mode : false
+2019-11-03 23:09:23,063 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:09:43,179 INFO org.apache.hadoop.mapreduce.Job (main):  map 3% reduce 0%
+2019-11-03 23:09:44,182 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-11-03 23:09:51,205 INFO org.apache.hadoop.mapreduce.Job (main):  map 9% reduce 0%
+2019-11-03 23:09:52,208 INFO org.apache.hadoop.mapreduce.Job (main):  map 20% reduce 0%
+2019-11-03 23:09:53,215 INFO org.apache.hadoop.mapreduce.Job (main):  map 25% reduce 0%
+2019-11-03 23:09:54,218 INFO org.apache.hadoop.mapreduce.Job (main):  map 28% reduce 0%
+2019-11-03 23:09:55,224 INFO org.apache.hadoop.mapreduce.Job (main):  map 33% reduce 0%
+2019-11-03 23:09:56,229 INFO org.apache.hadoop.mapreduce.Job (main):  map 44% reduce 0%
+2019-11-03 23:09:57,237 INFO org.apache.hadoop.mapreduce.Job (main):  map 65% reduce 0%
+2019-11-03 23:09:58,244 INFO org.apache.hadoop.mapreduce.Job (main):  map 89% reduce 0%
+2019-11-03 23:09:59,248 INFO org.apache.hadoop.mapreduce.Job (main):  map 94% reduce 0%
+2019-11-03 23:10:00,250 INFO org.apache.hadoop.mapreduce.Job (main):  map 96% reduce 0%
+2019-11-03 23:10:01,254 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:10:06,276 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:10:13,305 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 13%
+2019-11-03 23:10:14,309 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 33%
+2019-11-03 23:10:15,312 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 53%
+2019-11-03 23:10:16,316 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 80%
+2019-11-03 23:10:17,319 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 87%
+2019-11-03 23:10:20,327 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 93%
+2019-11-03 23:10:21,330 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:10:22,337 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0004 completed successfully
+2019-11-03 23:10:22,341 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=17087617
+		FILE: Number of bytes written=41717028
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3210
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=30
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=28951232
+		S3: Number of bytes written=29769934
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=30
+		Launched reduce tasks=16
+		Other local map tasks=30
+		Total time spent by all maps in occupied slots (ms)=41720832
+		Total time spent by all reduces in occupied slots (ms)=24399360
+		Total time spent by all map tasks (ms)=869184
+		Total time spent by all reduce tasks (ms)=254160
+		Total vcore-milliseconds taken by all map tasks=869184
+		Total vcore-milliseconds taken by all reduce tasks=254160
+		Total megabyte-milliseconds taken by all map tasks=1335066624
+		Total megabyte-milliseconds taken by all reduce tasks=780779520
+	Map-Reduce Framework
+		Map input records=1000001
+		Map output records=2000002
+		Map output bytes=56670974
+		Map output materialized bytes=16961761
+		Input split bytes=3210
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000002
+		Reduce shuffle bytes=16961761
+		Reduce input records=2000002
+		Reduce output records=1000001
+		Spilled Records=4000004
+		Shuffled Maps =450
+		Failed Shuffles=0
+		Merged Map outputs=450
+		GC time elapsed (ms)=28543
+		CPU time spent (ms)=290720
+		Physical memory (bytes) snapshot=25183363072
+		Virtual memory (bytes) snapshot=169477738496
+		Total committed heap usage (bytes)=22227714048
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=28951232
+	File Output Format Counters 
+		Bytes Written=29769934
+	pr.PageRank$ZERO_PROBABILITY
+		COUNTER=10015000
+2019-11-03 23:10:22,396 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:10:22,555 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 15
+2019-11-03 23:10:22,564 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00000' for reading
+2019-11-03 23:10:22,632 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00001' for reading
+2019-11-03 23:10:22,709 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00002' for reading
+2019-11-03 23:10:22,776 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00003' for reading
+2019-11-03 23:10:22,840 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00004' for reading
+2019-11-03 23:10:22,911 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00005' for reading
+2019-11-03 23:10:22,977 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00006' for reading
+2019-11-03 23:10:23,053 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00007' for reading
+2019-11-03 23:10:23,137 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00008' for reading
+2019-11-03 23:10:23,189 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00009' for reading
+2019-11-03 23:10:23,249 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00010' for reading
+2019-11-03 23:10:23,330 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00011' for reading
+2019-11-03 23:10:23,428 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00012' for reading
+2019-11-03 23:10:23,494 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00013' for reading
+2019-11-03 23:10:23,564 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-3/part-r-00014' for reading
+2019-11-03 23:10:24,085 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:30
+2019-11-03 23:10:24,138 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0005
+2019-11-03 23:10:24,360 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0005
+2019-11-03 23:10:24,365 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0005/
+2019-11-03 23:10:24,365 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0005
+2019-11-03 23:10:34,446 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0005 running in uber mode : false
+2019-11-03 23:10:34,447 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:10:54,570 INFO org.apache.hadoop.mapreduce.Job (main):  map 3% reduce 0%
+2019-11-03 23:10:55,574 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-11-03 23:11:02,600 INFO org.apache.hadoop.mapreduce.Job (main):  map 18% reduce 0%
+2019-11-03 23:11:03,603 INFO org.apache.hadoop.mapreduce.Job (main):  map 23% reduce 0%
+2019-11-03 23:11:04,618 INFO org.apache.hadoop.mapreduce.Job (main):  map 29% reduce 0%
+2019-11-03 23:11:05,625 INFO org.apache.hadoop.mapreduce.Job (main):  map 34% reduce 0%
+2019-11-03 23:11:06,638 INFO org.apache.hadoop.mapreduce.Job (main):  map 42% reduce 0%
+2019-11-03 23:11:07,643 INFO org.apache.hadoop.mapreduce.Job (main):  map 62% reduce 0%
+2019-11-03 23:11:08,647 INFO org.apache.hadoop.mapreduce.Job (main):  map 86% reduce 0%
+2019-11-03 23:11:09,652 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:11:14,672 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:11:23,703 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 13%
+2019-11-03 23:11:24,706 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 20%
+2019-11-03 23:11:25,710 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 53%
+2019-11-03 23:11:26,714 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 73%
+2019-11-03 23:11:27,717 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 87%
+2019-11-03 23:11:28,825 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:11:29,831 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0005 completed successfully
+2019-11-03 23:11:29,835 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=17145202
+		FILE: Number of bytes written=41899465
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3210
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=30
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=29904223
+		S3: Number of bytes written=36745934
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=30
+		Launched reduce tasks=16
+		Other local map tasks=30
+		Total time spent by all maps in occupied slots (ms)=40250784
+		Total time spent by all reduces in occupied slots (ms)=24247584
+		Total time spent by all map tasks (ms)=838558
+		Total time spent by all reduce tasks (ms)=252579
+		Total vcore-milliseconds taken by all map tasks=838558
+		Total vcore-milliseconds taken by all reduce tasks=252579
+		Total megabyte-milliseconds taken by all map tasks=1288025088
+		Total megabyte-milliseconds taken by all reduce tasks=775922688
+	Map-Reduce Framework
+		Map input records=1000001
+		Map output records=2000002
+		Map output bytes=58650976
+		Map output materialized bytes=17086613
+		Input split bytes=3210
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000002
+		Reduce shuffle bytes=17086613
+		Reduce input records=2000002
+		Reduce output records=1000001
+		Spilled Records=4000004
+		Shuffled Maps =450
+		Failed Shuffles=0
+		Merged Map outputs=450
+		GC time elapsed (ms)=27843
+		CPU time spent (ms)=282680
+		Physical memory (bytes) snapshot=24810385408
+		Virtual memory (bytes) snapshot=169461862400
+		Total committed heap usage (bytes)=21649424384
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=29904223
+	File Output Format Counters 
+		Bytes Written=36745934
+	pr.PageRank$ZERO_PROBABILITY
+		COUNTER=10021000
+2019-11-03 23:11:29,881 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:11:30,463 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 15
+2019-11-03 23:11:30,469 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00000' for reading
+2019-11-03 23:11:30,544 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00001' for reading
+2019-11-03 23:11:30,630 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00002' for reading
+2019-11-03 23:11:30,722 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00003' for reading
+2019-11-03 23:11:30,809 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00004' for reading
+2019-11-03 23:11:30,880 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00005' for reading
+2019-11-03 23:11:30,962 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00006' for reading
+2019-11-03 23:11:31,044 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00007' for reading
+2019-11-03 23:11:31,128 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00008' for reading
+2019-11-03 23:11:31,222 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00009' for reading
+2019-11-03 23:11:31,306 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00010' for reading
+2019-11-03 23:11:31,399 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00011' for reading
+2019-11-03 23:11:31,510 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00012' for reading
+2019-11-03 23:11:31,581 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00013' for reading
+2019-11-03 23:11:31,668 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-4/part-r-00014' for reading
+2019-11-03 23:11:31,809 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:30
+2019-11-03 23:11:31,845 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0006
+2019-11-03 23:11:31,873 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0006
+2019-11-03 23:11:31,877 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0006/
+2019-11-03 23:11:31,877 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0006
+2019-11-03 23:11:41,091 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0006 running in uber mode : false
+2019-11-03 23:11:41,091 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:12:01,184 INFO org.apache.hadoop.mapreduce.Job (main):  map 3% reduce 0%
+2019-11-03 23:12:02,188 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-11-03 23:12:10,211 INFO org.apache.hadoop.mapreduce.Job (main):  map 14% reduce 0%
+2019-11-03 23:12:11,221 INFO org.apache.hadoop.mapreduce.Job (main):  map 22% reduce 0%
+2019-11-03 23:12:12,226 INFO org.apache.hadoop.mapreduce.Job (main):  map 26% reduce 0%
+2019-11-03 23:12:13,230 INFO org.apache.hadoop.mapreduce.Job (main):  map 28% reduce 0%
+2019-11-03 23:12:14,239 INFO org.apache.hadoop.mapreduce.Job (main):  map 40% reduce 0%
+2019-11-03 23:12:15,242 INFO org.apache.hadoop.mapreduce.Job (main):  map 46% reduce 0%
+2019-11-03 23:12:16,247 INFO org.apache.hadoop.mapreduce.Job (main):  map 66% reduce 0%
+2019-11-03 23:12:17,277 INFO org.apache.hadoop.mapreduce.Job (main):  map 85% reduce 0%
+2019-11-03 23:12:18,288 INFO org.apache.hadoop.mapreduce.Job (main):  map 93% reduce 0%
+2019-11-03 23:12:19,290 INFO org.apache.hadoop.mapreduce.Job (main):  map 95% reduce 0%
+2019-11-03 23:12:20,293 INFO org.apache.hadoop.mapreduce.Job (main):  map 97% reduce 0%
+2019-11-03 23:12:21,297 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:12:26,355 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:12:32,374 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 20%
+2019-11-03 23:12:33,377 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 27%
+2019-11-03 23:12:34,380 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 53%
+2019-11-03 23:12:35,383 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 60%
+2019-11-03 23:12:36,386 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 80%
+2019-11-03 23:12:37,388 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 87%
+2019-11-03 23:12:39,393 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 93%
+2019-11-03 23:12:41,399 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:12:42,405 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0006 completed successfully
+2019-11-03 23:12:42,408 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=17281178
+		FILE: Number of bytes written=42349352
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3210
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=30
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=36884808
+		S3: Number of bytes written=32778934
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=30
+		Launched reduce tasks=16
+		Other local map tasks=30
+		Total time spent by all maps in occupied slots (ms)=42535296
+		Total time spent by all reduces in occupied slots (ms)=24728160
+		Total time spent by all map tasks (ms)=886152
+		Total time spent by all reduce tasks (ms)=257585
+		Total vcore-milliseconds taken by all map tasks=886152
+		Total vcore-milliseconds taken by all reduce tasks=257585
+		Total megabyte-milliseconds taken by all map tasks=1361129472
+		Total megabyte-milliseconds taken by all reduce tasks=791301120
+	Map-Reduce Framework
+		Map input records=1000001
+		Map output records=2000002
+		Map output bytes=72602976
+		Map output materialized bytes=17400524
+		Input split bytes=3210
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000002
+		Reduce shuffle bytes=17400524
+		Reduce input records=2000002
+		Reduce output records=1000001
+		Spilled Records=4000004
+		Shuffled Maps =450
+		Failed Shuffles=0
+		Merged Map outputs=450
+		GC time elapsed (ms)=27898
+		CPU time spent (ms)=303510
+		Physical memory (bytes) snapshot=25062346752
+		Virtual memory (bytes) snapshot=169435648000
+		Total committed heap usage (bytes)=21923627008
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=36884808
+	File Output Format Counters 
+		Bytes Written=32778934
+	pr.PageRank$ZERO_PROBABILITY
+		COUNTER=10027000
+2019-11-03 23:12:42,468 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:12:42,608 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 15
+2019-11-03 23:12:42,616 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00000' for reading
+2019-11-03 23:12:42,685 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00001' for reading
+2019-11-03 23:12:42,746 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00002' for reading
+2019-11-03 23:12:42,799 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00003' for reading
+2019-11-03 23:12:42,862 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00004' for reading
+2019-11-03 23:12:42,931 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00005' for reading
+2019-11-03 23:12:42,994 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00006' for reading
+2019-11-03 23:12:43,061 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00007' for reading
+2019-11-03 23:12:43,117 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00008' for reading
+2019-11-03 23:12:43,187 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00009' for reading
+2019-11-03 23:12:43,258 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00010' for reading
+2019-11-03 23:12:43,321 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00011' for reading
+2019-11-03 23:12:43,393 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00012' for reading
+2019-11-03 23:12:43,460 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00013' for reading
+2019-11-03 23:12:43,514 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-5/part-r-00014' for reading
+2019-11-03 23:12:43,620 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:30
+2019-11-03 23:12:43,649 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0007
+2019-11-03 23:12:43,676 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0007
+2019-11-03 23:12:43,680 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0007/
+2019-11-03 23:12:43,680 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0007
+2019-11-03 23:12:53,852 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0007 running in uber mode : false
+2019-11-03 23:12:53,852 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:13:13,962 INFO org.apache.hadoop.mapreduce.Job (main):  map 3% reduce 0%
+2019-11-03 23:13:14,966 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-11-03 23:13:22,995 INFO org.apache.hadoop.mapreduce.Job (main):  map 22% reduce 0%
+2019-11-03 23:13:23,998 INFO org.apache.hadoop.mapreduce.Job (main):  map 24% reduce 0%
+2019-11-03 23:13:26,008 INFO org.apache.hadoop.mapreduce.Job (main):  map 29% reduce 0%
+2019-11-03 23:13:27,011 INFO org.apache.hadoop.mapreduce.Job (main):  map 39% reduce 0%
+2019-11-03 23:13:28,016 INFO org.apache.hadoop.mapreduce.Job (main):  map 51% reduce 0%
+2019-11-03 23:13:29,020 INFO org.apache.hadoop.mapreduce.Job (main):  map 76% reduce 0%
+2019-11-03 23:13:30,027 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:13:36,058 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:13:45,092 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 13%
+2019-11-03 23:13:46,096 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 27%
+2019-11-03 23:13:47,099 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 47%
+2019-11-03 23:13:48,102 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 67%
+2019-11-03 23:13:49,105 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 93%
+2019-11-03 23:13:50,117 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:13:51,124 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0007 completed successfully
+2019-11-03 23:13:51,127 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=17284785
+		FILE: Number of bytes written=42300874
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3210
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=30
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=32926700
+		S3: Number of bytes written=34777934
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=30
+		Launched reduce tasks=16
+		Other local map tasks=30
+		Total time spent by all maps in occupied slots (ms)=42065280
+		Total time spent by all reduces in occupied slots (ms)=24923136
+		Total time spent by all map tasks (ms)=876360
+		Total time spent by all reduce tasks (ms)=259616
+		Total vcore-milliseconds taken by all map tasks=876360
+		Total vcore-milliseconds taken by all reduce tasks=259616
+		Total megabyte-milliseconds taken by all map tasks=1346088960
+		Total megabyte-milliseconds taken by all reduce tasks=797540352
+	Map-Reduce Framework
+		Map input records=1000001
+		Map output records=2000002
+		Map output bytes=64668976
+		Map output materialized bytes=17348439
+		Input split bytes=3210
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000002
+		Reduce shuffle bytes=17348439
+		Reduce input records=2000002
+		Reduce output records=1000001
+		Spilled Records=4000004
+		Shuffled Maps =450
+		Failed Shuffles=0
+		Merged Map outputs=450
+		GC time elapsed (ms)=27795
+		CPU time spent (ms)=290410
+		Physical memory (bytes) snapshot=24761991168
+		Virtual memory (bytes) snapshot=169424617472
+		Total committed heap usage (bytes)=21708144640
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=32926700
+	File Output Format Counters 
+		Bytes Written=34777934
+	pr.PageRank$ZERO_PROBABILITY
+		COUNTER=10031000
+2019-11-03 23:13:51,178 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:13:51,312 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 15
+2019-11-03 23:13:51,318 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00000' for reading
+2019-11-03 23:13:51,402 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00001' for reading
+2019-11-03 23:13:51,468 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00002' for reading
+2019-11-03 23:13:51,548 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00003' for reading
+2019-11-03 23:13:51,625 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00004' for reading
+2019-11-03 23:13:51,689 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00005' for reading
+2019-11-03 23:13:51,769 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00006' for reading
+2019-11-03 23:13:51,822 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00007' for reading
+2019-11-03 23:13:51,885 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00008' for reading
+2019-11-03 23:13:51,939 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00009' for reading
+2019-11-03 23:13:52,028 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00010' for reading
+2019-11-03 23:13:52,097 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00011' for reading
+2019-11-03 23:13:52,162 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00012' for reading
+2019-11-03 23:13:52,217 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00013' for reading
+2019-11-03 23:13:52,285 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-6/part-r-00014' for reading
+2019-11-03 23:13:52,396 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:30
+2019-11-03 23:13:52,429 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0008
+2019-11-03 23:13:52,454 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0008
+2019-11-03 23:13:52,456 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0008/
+2019-11-03 23:13:52,456 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0008
+2019-11-03 23:14:02,544 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0008 running in uber mode : false
+2019-11-03 23:14:02,544 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:14:21,643 INFO org.apache.hadoop.mapreduce.Job (main):  map 3% reduce 0%
+2019-11-03 23:14:22,648 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-11-03 23:14:31,674 INFO org.apache.hadoop.mapreduce.Job (main):  map 18% reduce 0%
+2019-11-03 23:14:32,677 INFO org.apache.hadoop.mapreduce.Job (main):  map 23% reduce 0%
+2019-11-03 23:14:34,690 INFO org.apache.hadoop.mapreduce.Job (main):  map 27% reduce 0%
+2019-11-03 23:14:35,693 INFO org.apache.hadoop.mapreduce.Job (main):  map 33% reduce 0%
+2019-11-03 23:14:36,697 INFO org.apache.hadoop.mapreduce.Job (main):  map 47% reduce 0%
+2019-11-03 23:14:37,700 INFO org.apache.hadoop.mapreduce.Job (main):  map 65% reduce 0%
+2019-11-03 23:14:38,706 INFO org.apache.hadoop.mapreduce.Job (main):  map 87% reduce 0%
+2019-11-03 23:14:39,709 INFO org.apache.hadoop.mapreduce.Job (main):  map 96% reduce 0%
+2019-11-03 23:14:40,716 INFO org.apache.hadoop.mapreduce.Job (main):  map 99% reduce 0%
+2019-11-03 23:14:41,719 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:14:45,730 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:14:53,758 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 20%
+2019-11-03 23:14:54,761 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 27%
+2019-11-03 23:14:55,764 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 47%
+2019-11-03 23:14:56,766 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 60%
+2019-11-03 23:14:57,769 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 80%
+2019-11-03 23:14:58,771 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 87%
+2019-11-03 23:14:59,774 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 93%
+2019-11-03 23:15:00,778 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:15:02,786 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0008 completed successfully
+2019-11-03 23:15:02,789 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=17366294
+		FILE: Number of bytes written=42466784
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3210
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=30
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=34839493
+		S3: Number of bytes written=36753934
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=30
+		Launched reduce tasks=16
+		Other local map tasks=30
+		Total time spent by all maps in occupied slots (ms)=43099296
+		Total time spent by all reduces in occupied slots (ms)=25018272
+		Total time spent by all map tasks (ms)=897902
+		Total time spent by all reduce tasks (ms)=260607
+		Total vcore-milliseconds taken by all map tasks=897902
+		Total vcore-milliseconds taken by all reduce tasks=260607
+		Total megabyte-milliseconds taken by all map tasks=1379177472
+		Total megabyte-milliseconds taken by all reduce tasks=800584704
+	Map-Reduce Framework
+		Map input records=1000001
+		Map output records=2000002
+		Map output bytes=68666976
+		Map output materialized bytes=17432840
+		Input split bytes=3210
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000002
+		Reduce shuffle bytes=17432840
+		Reduce input records=2000002
+		Reduce output records=1000001
+		Spilled Records=4000004
+		Shuffled Maps =450
+		Failed Shuffles=0
+		Merged Map outputs=450
+		GC time elapsed (ms)=28592
+		CPU time spent (ms)=293580
+		Physical memory (bytes) snapshot=24743186432
+		Virtual memory (bytes) snapshot=169506775040
+		Total committed heap usage (bytes)=21577072640
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=34839493
+	File Output Format Counters 
+		Bytes Written=36753934
+	pr.PageRank$ZERO_PROBABILITY
+		COUNTER=10035000
+2019-11-03 23:15:02,843 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:15:03,010 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 15
+2019-11-03 23:15:03,019 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00000' for reading
+2019-11-03 23:15:03,106 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00001' for reading
+2019-11-03 23:15:03,200 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00002' for reading
+2019-11-03 23:15:03,285 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00003' for reading
+2019-11-03 23:15:03,368 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00004' for reading
+2019-11-03 23:15:03,456 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00005' for reading
+2019-11-03 23:15:03,540 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00006' for reading
+2019-11-03 23:15:03,615 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00007' for reading
+2019-11-03 23:15:03,709 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00008' for reading
+2019-11-03 23:15:03,793 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00009' for reading
+2019-11-03 23:15:03,878 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00010' for reading
+2019-11-03 23:15:03,954 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00011' for reading
+2019-11-03 23:15:04,038 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00012' for reading
+2019-11-03 23:15:04,111 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00013' for reading
+2019-11-03 23:15:04,198 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-7/part-r-00014' for reading
+2019-11-03 23:15:04,320 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:30
+2019-11-03 23:15:04,361 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0009
+2019-11-03 23:15:04,379 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0009
+2019-11-03 23:15:04,389 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0009/
+2019-11-03 23:15:04,389 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0009
+2019-11-03 23:15:13,531 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0009 running in uber mode : false
+2019-11-03 23:15:13,532 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:15:32,625 INFO org.apache.hadoop.mapreduce.Job (main):  map 3% reduce 0%
+2019-11-03 23:15:33,628 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-11-03 23:15:42,659 INFO org.apache.hadoop.mapreduce.Job (main):  map 15% reduce 0%
+2019-11-03 23:15:43,663 INFO org.apache.hadoop.mapreduce.Job (main):  map 22% reduce 0%
+2019-11-03 23:15:46,674 INFO org.apache.hadoop.mapreduce.Job (main):  map 30% reduce 0%
+2019-11-03 23:15:47,678 INFO org.apache.hadoop.mapreduce.Job (main):  map 45% reduce 0%
+2019-11-03 23:15:48,685 INFO org.apache.hadoop.mapreduce.Job (main):  map 57% reduce 0%
+2019-11-03 23:15:49,692 INFO org.apache.hadoop.mapreduce.Job (main):  map 84% reduce 0%
+2019-11-03 23:15:50,696 INFO org.apache.hadoop.mapreduce.Job (main):  map 94% reduce 0%
+2019-11-03 23:15:51,699 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:15:56,724 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:16:06,760 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 13%
+2019-11-03 23:16:07,769 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 26%
+2019-11-03 23:16:08,772 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 67%
+2019-11-03 23:16:09,775 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 92%
+2019-11-03 23:16:10,783 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:16:12,793 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0009 completed successfully
+2019-11-03 23:16:12,795 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=17395732
+		FILE: Number of bytes written=42589271
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3210
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=30
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=36872056
+		S3: Number of bytes written=36757933
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=30
+		Launched reduce tasks=16
+		Other local map tasks=30
+		Total time spent by all maps in occupied slots (ms)=43089216
+		Total time spent by all reduces in occupied slots (ms)=26126208
+		Total time spent by all map tasks (ms)=897692
+		Total time spent by all reduce tasks (ms)=272148
+		Total vcore-milliseconds taken by all map tasks=897692
+		Total vcore-milliseconds taken by all reduce tasks=272148
+		Total megabyte-milliseconds taken by all map tasks=1378854912
+		Total megabyte-milliseconds taken by all reduce tasks=836038656
+	Map-Reduce Framework
+		Map input records=1000001
+		Map output records=2000002
+		Map output bytes=72618976
+		Map output materialized bytes=17525889
+		Input split bytes=3210
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000002
+		Reduce shuffle bytes=17525889
+		Reduce input records=2000002
+		Reduce output records=1000001
+		Spilled Records=4000004
+		Shuffled Maps =450
+		Failed Shuffles=0
+		Merged Map outputs=450
+		GC time elapsed (ms)=28359
+		CPU time spent (ms)=309770
+		Physical memory (bytes) snapshot=25227247616
+		Virtual memory (bytes) snapshot=169400434688
+		Total committed heap usage (bytes)=22019047424
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=36872056
+	File Output Format Counters 
+		Bytes Written=36757933
+	pr.PageRank$ZERO_PROBABILITY
+		COUNTER=10038000
+2019-11-03 23:16:12,843 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:16:12,974 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 15
+2019-11-03 23:16:12,981 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00000' for reading
+2019-11-03 23:16:13,052 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00001' for reading
+2019-11-03 23:16:13,127 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00002' for reading
+2019-11-03 23:16:13,201 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00003' for reading
+2019-11-03 23:16:13,257 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00004' for reading
+2019-11-03 23:16:13,321 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00005' for reading
+2019-11-03 23:16:13,391 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00006' for reading
+2019-11-03 23:16:13,453 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00007' for reading
+2019-11-03 23:16:13,554 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00008' for reading
+2019-11-03 23:16:13,620 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00009' for reading
+2019-11-03 23:16:13,690 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00010' for reading
+2019-11-03 23:16:13,757 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00011' for reading
+2019-11-03 23:16:13,816 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00012' for reading
+2019-11-03 23:16:13,904 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00013' for reading
+2019-11-03 23:16:13,971 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-8/part-r-00014' for reading
+2019-11-03 23:16:14,073 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:30
+2019-11-03 23:16:14,137 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0010
+2019-11-03 23:16:14,161 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0010
+2019-11-03 23:16:14,169 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0010/
+2019-11-03 23:16:14,170 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0010
+2019-11-03 23:16:24,253 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0010 running in uber mode : false
+2019-11-03 23:16:24,254 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:16:43,345 INFO org.apache.hadoop.mapreduce.Job (main):  map 3% reduce 0%
+2019-11-03 23:16:44,348 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-11-03 23:16:51,371 INFO org.apache.hadoop.mapreduce.Job (main):  map 9% reduce 0%
+2019-11-03 23:16:52,374 INFO org.apache.hadoop.mapreduce.Job (main):  map 13% reduce 0%
+2019-11-03 23:16:53,377 INFO org.apache.hadoop.mapreduce.Job (main):  map 21% reduce 0%
+2019-11-03 23:16:54,383 INFO org.apache.hadoop.mapreduce.Job (main):  map 24% reduce 0%
+2019-11-03 23:16:55,389 INFO org.apache.hadoop.mapreduce.Job (main):  map 25% reduce 0%
+2019-11-03 23:16:56,395 INFO org.apache.hadoop.mapreduce.Job (main):  map 32% reduce 0%
+2019-11-03 23:16:57,406 INFO org.apache.hadoop.mapreduce.Job (main):  map 46% reduce 0%
+2019-11-03 23:16:58,410 INFO org.apache.hadoop.mapreduce.Job (main):  map 65% reduce 0%
+2019-11-03 23:16:59,414 INFO org.apache.hadoop.mapreduce.Job (main):  map 86% reduce 0%
+2019-11-03 23:17:00,418 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:17:05,443 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:17:16,486 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 33%
+2019-11-03 23:17:17,489 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 53%
+2019-11-03 23:17:18,493 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 73%
+2019-11-03 23:17:19,496 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:17:21,609 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0010 completed successfully
+2019-11-03 23:17:21,612 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=17436576
+		FILE: Number of bytes written=42667381
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3210
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=30
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=36885813
+		S3: Number of bytes written=36751934
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=30
+		Launched reduce tasks=16
+		Other local map tasks=30
+		Total time spent by all maps in occupied slots (ms)=42045024
+		Total time spent by all reduces in occupied slots (ms)=25695072
+		Total time spent by all map tasks (ms)=875938
+		Total time spent by all reduce tasks (ms)=267657
+		Total vcore-milliseconds taken by all map tasks=875938
+		Total vcore-milliseconds taken by all reduce tasks=267657
+		Total megabyte-milliseconds taken by all map tasks=1345440768
+		Total megabyte-milliseconds taken by all reduce tasks=822242304
+	Map-Reduce Framework
+		Map input records=1000001
+		Map output records=2000002
+		Map output bytes=72626974
+		Map output materialized bytes=17563155
+		Input split bytes=3210
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000002
+		Reduce shuffle bytes=17563155
+		Reduce input records=2000002
+		Reduce output records=1000001
+		Spilled Records=4000004
+		Shuffled Maps =450
+		Failed Shuffles=0
+		Merged Map outputs=450
+		GC time elapsed (ms)=26823
+		CPU time spent (ms)=306200
+		Physical memory (bytes) snapshot=25513271296
+		Virtual memory (bytes) snapshot=169466720256
+		Total committed heap usage (bytes)=22501916672
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=36885813
+	File Output Format Counters 
+		Bytes Written=36751934
+	pr.PageRank$ZERO_PROBABILITY
+		COUNTER=10041000
+2019-11-03 23:17:21,656 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-11-171.us-east-2.compute.internal/172.31.11.171:8032
+2019-11-03 23:17:21,774 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 15
+2019-11-03 23:17:21,780 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00000' for reading
+2019-11-03 23:17:21,850 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00001' for reading
+2019-11-03 23:17:21,921 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00002' for reading
+2019-11-03 23:17:21,994 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00003' for reading
+2019-11-03 23:17:22,068 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00004' for reading
+2019-11-03 23:17:22,140 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00005' for reading
+2019-11-03 23:17:22,205 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00006' for reading
+2019-11-03 23:17:22,274 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00007' for reading
+2019-11-03 23:17:22,345 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00008' for reading
+2019-11-03 23:17:22,414 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00009' for reading
+2019-11-03 23:17:22,475 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00010' for reading
+2019-11-03 23:17:22,549 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00011' for reading
+2019-11-03 23:17:22,614 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00012' for reading
+2019-11-03 23:17:22,681 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00013' for reading
+2019-11-03 23:17:22,752 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://pagerankdheeraj/output-9/part-r-00014' for reading
+2019-11-03 23:17:22,865 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:30
+2019-11-03 23:17:22,936 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1572822267050_0011
+2019-11-03 23:17:22,949 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1572822267050_0011
+2019-11-03 23:17:22,962 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-11-171.us-east-2.compute.internal:20888/proxy/application_1572822267050_0011/
+2019-11-03 23:17:22,962 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1572822267050_0011
+2019-11-03 23:17:33,095 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0011 running in uber mode : false
+2019-11-03 23:17:33,095 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-11-03 23:17:51,183 INFO org.apache.hadoop.mapreduce.Job (main):  map 3% reduce 0%
+2019-11-03 23:17:53,189 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-11-03 23:18:01,216 INFO org.apache.hadoop.mapreduce.Job (main):  map 13% reduce 0%
+2019-11-03 23:18:02,219 INFO org.apache.hadoop.mapreduce.Job (main):  map 21% reduce 0%
+2019-11-03 23:18:03,222 INFO org.apache.hadoop.mapreduce.Job (main):  map 28% reduce 0%
+2019-11-03 23:18:04,229 INFO org.apache.hadoop.mapreduce.Job (main):  map 29% reduce 0%
+2019-11-03 23:18:05,232 INFO org.apache.hadoop.mapreduce.Job (main):  map 36% reduce 0%
+2019-11-03 23:18:06,236 INFO org.apache.hadoop.mapreduce.Job (main):  map 43% reduce 0%
+2019-11-03 23:18:07,243 INFO org.apache.hadoop.mapreduce.Job (main):  map 66% reduce 0%
+2019-11-03 23:18:08,246 INFO org.apache.hadoop.mapreduce.Job (main):  map 89% reduce 0%
+2019-11-03 23:18:09,250 INFO org.apache.hadoop.mapreduce.Job (main):  map 96% reduce 0%
+2019-11-03 23:18:10,257 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-11-03 23:18:14,270 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 7%
+2019-11-03 23:18:24,298 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 13%
+2019-11-03 23:18:25,301 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 33%
+2019-11-03 23:18:26,304 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 67%
+2019-11-03 23:18:27,307 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 87%
+2019-11-03 23:18:29,313 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-11-03 23:18:31,324 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1572822267050_0011 completed successfully
+2019-11-03 23:18:31,328 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=17478000
+		FILE: Number of bytes written=42739419
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3210
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=30
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=36887125
+		S3: Number of bytes written=35755934
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=30
+		Launched reduce tasks=16
+		Other local map tasks=30
+		Total time spent by all maps in occupied slots (ms)=41220480
+		Total time spent by all reduces in occupied slots (ms)=25563840
+		Total time spent by all map tasks (ms)=858760
+		Total time spent by all reduce tasks (ms)=266290
+		Total vcore-milliseconds taken by all map tasks=858760
+		Total vcore-milliseconds taken by all reduce tasks=266290
+		Total megabyte-milliseconds taken by all map tasks=1319055360
+		Total megabyte-milliseconds taken by all reduce tasks=818042880
+	Map-Reduce Framework
+		Map input records=1000001
+		Map output records=2000002
+		Map output bytes=72614976
+		Map output materialized bytes=17593724
+		Input split bytes=3210
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000002
+		Reduce shuffle bytes=17593724
+		Reduce input records=2000002
+		Reduce output records=1000001
+		Spilled Records=4000004
+		Shuffled Maps =450
+		Failed Shuffles=0
+		Merged Map outputs=450
+		GC time elapsed (ms)=27274
+		CPU time spent (ms)=299890
+		Physical memory (bytes) snapshot=25242636288
+		Virtual memory (bytes) snapshot=169490460672
+		Total committed heap usage (bytes)=22004891648
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=36887125
+	File Output Format Counters 
+		Bytes Written=35755934
+	pr.PageRank$ZERO_PROBABILITY
+		COUNTER=10043000
+
