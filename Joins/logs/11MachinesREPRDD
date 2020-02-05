@@ -1,0 +1,832 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/mnt1/yarn/usercache/hadoop/filecache/10/__spark_libs__6471376988523530695.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+19/10/21 07:06:27 INFO SignalUtils: Registered signal handler for TERM
+19/10/21 07:06:27 INFO SignalUtils: Registered signal handler for HUP
+19/10/21 07:06:27 INFO SignalUtils: Registered signal handler for INT
+19/10/21 07:06:28 INFO SecurityManager: Changing view acls to: yarn,hadoop
+19/10/21 07:06:28 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+19/10/21 07:06:28 INFO SecurityManager: Changing view acls groups to: 
+19/10/21 07:06:28 INFO SecurityManager: Changing modify acls groups to: 
+19/10/21 07:06:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+19/10/21 07:06:29 INFO ApplicationMaster: Preparing Local resources
+19/10/21 07:06:30 INFO ApplicationMaster: ApplicationAttemptId: appattempt_1571641511250_0001_000001
+19/10/21 07:06:30 INFO ApplicationMaster: Starting the user application in a separate Thread
+19/10/21 07:06:30 INFO ApplicationMaster: Waiting for spark context initialization...
+19/10/21 07:06:30 INFO SparkContext: Running Spark version 2.4.3
+19/10/21 07:06:30 INFO SparkContext: Submitted application: TriangleCount
+19/10/21 07:06:30 INFO SecurityManager: Changing view acls to: yarn,hadoop
+19/10/21 07:06:30 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+19/10/21 07:06:30 INFO SecurityManager: Changing view acls groups to: 
+19/10/21 07:06:30 INFO SecurityManager: Changing modify acls groups to: 
+19/10/21 07:06:30 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+19/10/21 07:06:30 INFO Utils: Successfully started service 'sparkDriver' on port 42353.
+19/10/21 07:06:30 INFO SparkEnv: Registering MapOutputTracker
+19/10/21 07:06:30 INFO SparkEnv: Registering BlockManagerMaster
+19/10/21 07:06:30 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/10/21 07:06:30 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/10/21 07:06:30 INFO DiskBlockManager: Created local directory at /mnt1/yarn/usercache/hadoop/appcache/application_1571641511250_0001/blockmgr-239e6ca8-eb0e-448d-b4d7-ba1d5ccda6f2
+19/10/21 07:06:30 INFO DiskBlockManager: Created local directory at /mnt/yarn/usercache/hadoop/appcache/application_1571641511250_0001/blockmgr-fc5336f7-561a-4b8c-b268-c3a545bcb46a
+19/10/21 07:06:30 INFO MemoryStore: MemoryStore started with capacity 414.4 MB
+19/10/21 07:06:31 INFO SparkEnv: Registering OutputCommitCoordinator
+19/10/21 07:06:31 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /jobs, /jobs/json, /jobs/job, /jobs/job/json, /stages, /stages/json, /stages/stage, /stages/stage/json, /stages/pool, /stages/pool/json, /storage, /storage/json, /storage/rdd, /storage/rdd/json, /environment, /environment/json, /executors, /executors/json, /executors/threadDump, /executors/threadDump/json, /static, /, /api, /jobs/job/kill, /stages/stage/kill.
+19/10/21 07:06:31 INFO Utils: Successfully started service 'SparkUI' on port 46123.
+19/10/21 07:06:31 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://ip-172-31-24-127.us-east-2.compute.internal:46123
+19/10/21 07:06:31 INFO YarnClusterScheduler: Created YarnClusterScheduler
+19/10/21 07:06:31 INFO SchedulerExtensionServices: Starting Yarn extension services with app application_1571641511250_0001 and attemptId Some(appattempt_1571641511250_0001_000001)
+19/10/21 07:06:31 INFO Utils: Using initial executors = 50, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+19/10/21 07:06:31 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42965.
+19/10/21 07:06:31 INFO NettyBlockTransferService: Server created on ip-172-31-24-127.us-east-2.compute.internal:42965
+19/10/21 07:06:31 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/10/21 07:06:31 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-172-31-24-127.us-east-2.compute.internal, 42965, None)
+19/10/21 07:06:31 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-24-127.us-east-2.compute.internal:42965 with 414.4 MB RAM, BlockManagerId(driver, ip-172-31-24-127.us-east-2.compute.internal, 42965, None)
+19/10/21 07:06:31 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-172-31-24-127.us-east-2.compute.internal, 42965, None)
+19/10/21 07:06:31 INFO BlockManager: external shuffle service port = 7337
+19/10/21 07:06:31 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-172-31-24-127.us-east-2.compute.internal, 42965, None)
+19/10/21 07:06:32 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /metrics/json.
+19/10/21 07:06:32 INFO EventLoggingListener: Logging events to hdfs:/var/log/spark/apps/application_1571641511250_0001_1
+19/10/21 07:06:32 INFO Utils: Using initial executors = 50, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+19/10/21 07:06:32 WARN YarnSchedulerBackend$YarnSchedulerEndpoint: Attempted to request executors before the AM has registered!
+19/10/21 07:06:32 INFO RMProxy: Connecting to ResourceManager at ip-172-31-25-244.us-east-2.compute.internal/172.31.25.244:8030
+19/10/21 07:06:32 INFO YarnRMClient: Registering the ApplicationMaster
+19/10/21 07:06:32 INFO ApplicationMaster: 
+===============================================================================
+YARN executor launch context:
+  env:
+    CLASSPATH -> /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*:/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar<CPS>{{PWD}}<CPS>{{PWD}}/__spark_conf__<CPS>{{PWD}}/__spark_libs__/*<CPS>$HADOOP_CONF_DIR<CPS>$HADOOP_COMMON_HOME/*<CPS>$HADOOP_COMMON_HOME/lib/*<CPS>$HADOOP_HDFS_HOME/*<CPS>$HADOOP_HDFS_HOME/lib/*<CPS>$HADOOP_MAPRED_HOME/*<CPS>$HADOOP_MAPRED_HOME/lib/*<CPS>$HADOOP_YARN_HOME/*<CPS>$HADOOP_YARN_HOME/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/ddb/lib/emr-ddb-hadoop.jar<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/kinesis/lib/emr-kinesis-hadoop.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>/usr/share/aws/aws-java-sdk/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/ddb/lib/emr-ddb-hadoop.jar<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/kinesis/lib/emr-kinesis-hadoop.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>/usr/share/aws/aws-java-sdk/*<CPS>{{PWD}}/__spark_conf__/__hadoop_conf__
+    SPARK_YARN_STAGING_DIR -> hdfs://ip-172-31-25-244.us-east-2.compute.internal:8020/user/hadoop/.sparkStaging/application_1571641511250_0001
+    SPARK_USER -> hadoop
+    SPARK_PUBLIC_DNS -> ip-172-31-24-127.us-east-2.compute.internal
+
+  command:
+    LD_LIBRARY_PATH=\"/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:$LD_LIBRARY_PATH\" \ 
+      {{JAVA_HOME}}/bin/java \ 
+      -server \ 
+      -Xmx4743m \ 
+      '-verbose:gc' \ 
+      '-XX:+PrintGCDetails' \ 
+      '-XX:+PrintGCDateStamps' \ 
+      '-XX:+UseConcMarkSweepGC' \ 
+      '-XX:CMSInitiatingOccupancyFraction=70' \ 
+      '-XX:MaxHeapFreeRatio=70' \ 
+      '-XX:+CMSClassUnloadingEnabled' \ 
+      '-XX:OnOutOfMemoryError=kill -9 %p' \ 
+      -Djava.io.tmpdir={{PWD}}/tmp \ 
+      '-Dspark.history.ui.port=18080' \ 
+      '-Dspark.driver.port=42353' \ 
+      '-Dspark.ui.port=0' \ 
+      -Dspark.yarn.app.container.log.dir=<LOG_DIR> \ 
+      org.apache.spark.executor.CoarseGrainedExecutorBackend \ 
+      --driver-url \ 
+      spark://CoarseGrainedScheduler@ip-172-31-24-127.us-east-2.compute.internal:42353 \ 
+      --executor-id \ 
+      <executorId> \ 
+      --hostname \ 
+      <hostname> \ 
+      --cores \ 
+      4 \ 
+      --app-id \ 
+      application_1571641511250_0001 \ 
+      --user-class-path \ 
+      file:$PWD/__app__.jar \ 
+      1><LOG_DIR>/stdout \ 
+      2><LOG_DIR>/stderr
+
+  resources:
+    __app__.jar -> resource { scheme: "hdfs" host: "ip-172-31-25-244.us-east-2.compute.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1571641511250_0001/replicated-join.jar" } size: 25524 timestamp: 1571641581755 type: FILE visibility: PRIVATE
+    __spark_libs__ -> resource { scheme: "hdfs" host: "ip-172-31-25-244.us-east-2.compute.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1571641511250_0001/__spark_libs__6471376988523530695.zip" } size: 229876049 timestamp: 1571641579752 type: ARCHIVE visibility: PRIVATE
+    __spark_conf__ -> resource { scheme: "hdfs" host: "ip-172-31-25-244.us-east-2.compute.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1571641511250_0001/__spark_conf__.zip" } size: 238997 timestamp: 1571641582497 type: ARCHIVE visibility: PRIVATE
+
+===============================================================================
+19/10/21 07:06:32 INFO Utils: Using initial executors = 50, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+19/10/21 07:06:32 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark://YarnAM@ip-172-31-24-127.us-east-2.compute.internal:42353)
+19/10/21 07:06:32 INFO YarnAllocator: Will request 50 executor container(s), each with 4 core(s) and 5632 MB memory (including 889 MB of overhead)
+19/10/21 07:06:32 INFO YarnAllocator: Submitted 50 unlocalized container requests.
+19/10/21 07:06:32 INFO ApplicationMaster: Started progress reporter thread with (heartbeat : 3000, initial allocation : 200) intervals
+19/10/21 07:06:32 INFO YarnClusterSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+19/10/21 07:06:32 INFO YarnClusterScheduler: YarnClusterScheduler.postStartHook done
+19/10/21 07:06:33 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 356.2 KB, free 414.1 MB)
+19/10/21 07:06:33 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.0 KB, free 414.1 MB)
+19/10/21 07:06:33 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-24-127.us-east-2.compute.internal:42965 (size: 34.0 KB, free: 414.4 MB)
+19/10/21 07:06:33 INFO SparkContext: Created broadcast 0 from textFile at ReplicatedJoin.scala:19
+19/10/21 07:06:33 INFO AMRMClientImpl: Received new token for : ip-172-31-27-234.us-east-2.compute.internal:8041
+19/10/21 07:06:33 INFO GPLNativeCodeLoader: Loaded native gpl library
+19/10/21 07:06:33 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000002 on host ip-172-31-27-234.us-east-2.compute.internal for executor with ID 1
+19/10/21 07:06:33 INFO LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev 7e6c862e89bc8db32c064454a55af74ddff73bae]
+19/10/21 07:06:33 INFO YarnAllocator: Received 1 containers from YARN, launching executors on 1 of them.
+19/10/21 07:06:33 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:06:35 INFO FileInputFormat: Total input files to process : 1
+19/10/21 07:06:35 INFO SparkContext: Starting job: collectAsMap at ReplicatedJoin.scala:38
+19/10/21 07:06:35 INFO DAGScheduler: Registering RDD 3 (map at ReplicatedJoin.scala:37)
+19/10/21 07:06:35 INFO DAGScheduler: Got job 0 (collectAsMap at ReplicatedJoin.scala:38) with 20 output partitions
+19/10/21 07:06:35 INFO DAGScheduler: Final stage: ResultStage 1 (collectAsMap at ReplicatedJoin.scala:38)
+19/10/21 07:06:35 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+19/10/21 07:06:35 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+19/10/21 07:06:35 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at map at ReplicatedJoin.scala:37), which has no missing parents
+19/10/21 07:06:35 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 5.7 KB, free 414.1 MB)
+19/10/21 07:06:35 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.1 KB, free 414.1 MB)
+19/10/21 07:06:35 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-24-127.us-east-2.compute.internal:42965 (size: 3.1 KB, free: 414.4 MB)
+19/10/21 07:06:35 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1201
+19/10/21 07:06:35 INFO DAGScheduler: Submitting 20 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at map at ReplicatedJoin.scala:37) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+19/10/21 07:06:35 INFO YarnClusterScheduler: Adding task set 0.0 with 20 tasks
+19/10/21 07:06:36 INFO AMRMClientImpl: Received new token for : ip-172-31-21-2.us-east-2.compute.internal:8041
+19/10/21 07:06:36 INFO AMRMClientImpl: Received new token for : ip-172-31-20-76.us-east-2.compute.internal:8041
+19/10/21 07:06:36 INFO AMRMClientImpl: Received new token for : ip-172-31-20-93.us-east-2.compute.internal:8041
+19/10/21 07:06:36 INFO AMRMClientImpl: Received new token for : ip-172-31-17-176.us-east-2.compute.internal:8041
+19/10/21 07:06:36 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000003 on host ip-172-31-27-234.us-east-2.compute.internal for executor with ID 2
+19/10/21 07:06:36 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000004 on host ip-172-31-21-2.us-east-2.compute.internal for executor with ID 3
+19/10/21 07:06:36 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:06:36 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000005 on host ip-172-31-20-76.us-east-2.compute.internal for executor with ID 4
+19/10/21 07:06:36 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000006 on host ip-172-31-17-176.us-east-2.compute.internal for executor with ID 5
+19/10/21 07:06:36 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000007 on host ip-172-31-20-93.us-east-2.compute.internal for executor with ID 6
+19/10/21 07:06:36 INFO YarnAllocator: Received 5 containers from YARN, launching executors on 5 of them.
+19/10/21 07:06:36 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:06:36 INFO YarnAllocator: Driver requested a total number of 5 executor(s).
+19/10/21 07:06:36 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:06:36 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:06:36 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:06:36 INFO YarnAllocator: Canceling requests for 44 executor container(s) to have a new desired total 5 executors.
+19/10/21 07:06:36 INFO AMRMClientImpl: Received new token for : ip-172-31-16-228.us-east-2.compute.internal:8041
+19/10/21 07:06:36 INFO AMRMClientImpl: Received new token for : ip-172-31-19-97.us-east-2.compute.internal:8041
+19/10/21 07:06:36 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 0 of them.
+19/10/21 07:06:40 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.27.234:46010) with ID 1
+19/10/21 07:06:40 INFO ExecutorAllocationManager: New executor 1 has registered (new total is 1)
+19/10/21 07:06:40 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 0, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:40 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 1, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:40 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 2, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:40 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 3, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:40 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-27-234.us-east-2.compute.internal:33329 with 2.6 GB RAM, BlockManagerId(1, ip-172-31-27-234.us-east-2.compute.internal, 33329, None)
+19/10/21 07:06:40 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.27.234:46014) with ID 2
+19/10/21 07:06:40 INFO ExecutorAllocationManager: New executor 2 has registered (new total is 2)
+19/10/21 07:06:40 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 4, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:40 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 5, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:40 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 6, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:40 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 7, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.20.76:44448) with ID 4
+19/10/21 07:06:41 INFO ExecutorAllocationManager: New executor 4 has registered (new total is 3)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 8, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 9, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 10, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 11, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.17.176:35086) with ID 5
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 12.0 in stage 0.0 (TID 12, ip-172-31-17-176.us-east-2.compute.internal, executor 5, partition 12, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13, ip-172-31-17-176.us-east-2.compute.internal, executor 5, partition 13, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14, ip-172-31-17-176.us-east-2.compute.internal, executor 5, partition 14, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO ExecutorAllocationManager: New executor 5 has registered (new total is 4)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15, ip-172-31-17-176.us-east-2.compute.internal, executor 5, partition 15, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-27-234.us-east-2.compute.internal:46119 with 2.6 GB RAM, BlockManagerId(2, ip-172-31-27-234.us-east-2.compute.internal, 46119, None)
+19/10/21 07:06:41 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.20.93:36836) with ID 6
+19/10/21 07:06:41 INFO ExecutorAllocationManager: New executor 6 has registered (new total is 5)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 16, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 17, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 18.0 in stage 0.0 (TID 18, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 18, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO TaskSetManager: Starting task 19.0 in stage 0.0 (TID 19, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 19, RACK_LOCAL, 7875 bytes)
+19/10/21 07:06:41 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.21.2:34146) with ID 3
+19/10/21 07:06:41 INFO ExecutorAllocationManager: New executor 3 has registered (new total is 6)
+19/10/21 07:06:41 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-20-76.us-east-2.compute.internal:34433 with 2.6 GB RAM, BlockManagerId(4, ip-172-31-20-76.us-east-2.compute.internal, 34433, None)
+19/10/21 07:06:41 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-27-234.us-east-2.compute.internal:33329 (size: 3.1 KB, free: 2.6 GB)
+19/10/21 07:06:41 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-17-176.us-east-2.compute.internal:42829 with 2.6 GB RAM, BlockManagerId(5, ip-172-31-17-176.us-east-2.compute.internal, 42829, None)
+19/10/21 07:06:41 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-21-2.us-east-2.compute.internal:40585 with 2.6 GB RAM, BlockManagerId(3, ip-172-31-21-2.us-east-2.compute.internal, 40585, None)
+19/10/21 07:06:41 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-20-93.us-east-2.compute.internal:36717 with 2.6 GB RAM, BlockManagerId(6, ip-172-31-20-93.us-east-2.compute.internal, 36717, None)
+19/10/21 07:06:41 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-27-234.us-east-2.compute.internal:33329 (size: 34.0 KB, free: 2.6 GB)
+19/10/21 07:06:41 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-17-176.us-east-2.compute.internal:42829 (size: 3.1 KB, free: 2.6 GB)
+19/10/21 07:06:42 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-17-176.us-east-2.compute.internal:42829 (size: 34.0 KB, free: 2.6 GB)
+19/10/21 07:06:42 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-27-234.us-east-2.compute.internal:46119 (size: 3.1 KB, free: 2.6 GB)
+19/10/21 07:06:42 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-20-76.us-east-2.compute.internal:34433 (size: 3.1 KB, free: 2.6 GB)
+19/10/21 07:06:42 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-20-93.us-east-2.compute.internal:36717 (size: 3.1 KB, free: 2.6 GB)
+19/10/21 07:06:42 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-20-76.us-east-2.compute.internal:34433 (size: 34.0 KB, free: 2.6 GB)
+19/10/21 07:06:42 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-20-93.us-east-2.compute.internal:36717 (size: 34.0 KB, free: 2.6 GB)
+19/10/21 07:06:42 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-27-234.us-east-2.compute.internal:46119 (size: 34.0 KB, free: 2.6 GB)
+19/10/21 07:06:49 INFO TaskSetManager: Finished task 19.0 in stage 0.0 (TID 19) in 7899 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (1/20)
+19/10/21 07:06:50 INFO TaskSetManager: Finished task 16.0 in stage 0.0 (TID 16) in 8992 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (2/20)
+19/10/21 07:06:50 INFO TaskSetManager: Finished task 13.0 in stage 0.0 (TID 13) in 9242 ms on ip-172-31-17-176.us-east-2.compute.internal (executor 5) (3/20)
+19/10/21 07:06:50 INFO TaskSetManager: Finished task 12.0 in stage 0.0 (TID 12) in 9246 ms on ip-172-31-17-176.us-east-2.compute.internal (executor 5) (4/20)
+19/10/21 07:06:50 INFO TaskSetManager: Finished task 15.0 in stage 0.0 (TID 15) in 9267 ms on ip-172-31-17-176.us-east-2.compute.internal (executor 5) (5/20)
+19/10/21 07:06:50 INFO TaskSetManager: Finished task 18.0 in stage 0.0 (TID 18) in 9159 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (6/20)
+19/10/21 07:06:50 INFO TaskSetManager: Finished task 14.0 in stage 0.0 (TID 14) in 9274 ms on ip-172-31-17-176.us-east-2.compute.internal (executor 5) (7/20)
+19/10/21 07:06:50 INFO YarnAllocator: Driver requested a total number of 4 executor(s).
+19/10/21 07:06:50 INFO TaskSetManager: Finished task 17.0 in stage 0.0 (TID 17) in 9246 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (8/20)
+19/10/21 07:06:50 INFO YarnAllocator: Driver requested a total number of 3 executor(s).
+19/10/21 07:06:51 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 10683 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (9/20)
+19/10/21 07:06:52 INFO TaskSetManager: Finished task 10.0 in stage 0.0 (TID 10) in 11170 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (10/20)
+19/10/21 07:06:52 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 11227 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (11/20)
+19/10/21 07:06:53 INFO TaskSetManager: Finished task 11.0 in stage 0.0 (TID 11) in 11926 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (12/20)
+19/10/21 07:06:53 INFO YarnAllocator: Driver requested a total number of 2 executor(s).
+19/10/21 07:06:59 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 18930 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (13/20)
+19/10/21 07:06:59 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 19218 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (14/20)
+19/10/21 07:06:59 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 18738 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (15/20)
+19/10/21 07:06:59 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 18832 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (16/20)
+19/10/21 07:06:59 INFO YarnAllocator: Driver requested a total number of 1 executor(s).
+19/10/21 07:06:59 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 19541 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (17/20)
+19/10/21 07:06:59 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 19572 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (18/20)
+19/10/21 07:06:59 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 19093 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (19/20)
+19/10/21 07:06:59 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 19096 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (20/20)
+19/10/21 07:06:59 INFO YarnClusterScheduler: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+19/10/21 07:06:59 INFO DAGScheduler: ShuffleMapStage 0 (map at ReplicatedJoin.scala:37) finished in 24.052 s
+19/10/21 07:06:59 INFO DAGScheduler: looking for newly runnable stages
+19/10/21 07:06:59 INFO DAGScheduler: running: Set()
+19/10/21 07:07:00 INFO DAGScheduler: waiting: Set(ResultStage 1)
+19/10/21 07:07:00 INFO DAGScheduler: failed: Set()
+19/10/21 07:07:00 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at mapValues at ReplicatedJoin.scala:38), which has no missing parents
+19/10/21 07:07:00 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 6.8 KB, free 414.1 MB)
+19/10/21 07:07:00 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.5 KB, free 414.1 MB)
+19/10/21 07:07:00 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-172-31-24-127.us-east-2.compute.internal:42965 (size: 3.5 KB, free: 414.4 MB)
+19/10/21 07:07:00 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1201
+19/10/21 07:07:00 INFO DAGScheduler: Submitting 20 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at mapValues at ReplicatedJoin.scala:38) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+19/10/21 07:07:00 INFO YarnClusterScheduler: Adding task set 1.0 with 20 tasks
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 20, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 0, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 21, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 1, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 22, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 2, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 23, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 3, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 24, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 5, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 25, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 6, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 26, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 4, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 27, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 7, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 8.0 in stage 1.0 (TID 28, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 8, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 9.0 in stage 1.0 (TID 29, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 9, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 10.0 in stage 1.0 (TID 30, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 10, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO TaskSetManager: Starting task 11.0 in stage 1.0 (TID 31, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 11, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:00 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-172-31-20-76.us-east-2.compute.internal:34433 (size: 3.5 KB, free: 2.6 GB)
+19/10/21 07:07:00 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 172.31.20.76:44448
+19/10/21 07:07:00 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-172-31-27-234.us-east-2.compute.internal:46119 (size: 3.5 KB, free: 2.6 GB)
+19/10/21 07:07:00 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-172-31-27-234.us-east-2.compute.internal:33329 (size: 3.5 KB, free: 2.6 GB)
+19/10/21 07:07:00 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 172.31.27.234:46014
+19/10/21 07:07:00 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 172.31.27.234:46010
+19/10/21 07:07:01 INFO YarnAllocator: Driver requested a total number of 5 executor(s).
+19/10/21 07:07:01 INFO ExecutorAllocationManager: Requesting 4 new executors because tasks are backlogged (new desired total will be 5)
+19/10/21 07:07:01 INFO TaskSetManager: Starting task 12.0 in stage 1.0 (TID 32, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 12, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:01 INFO TaskSetManager: Starting task 13.0 in stage 1.0 (TID 33, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 13, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:01 INFO TaskSetManager: Starting task 14.0 in stage 1.0 (TID 34, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 14, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:01 INFO TaskSetManager: Starting task 15.0 in stage 1.0 (TID 35, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 15, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:01 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 20) in 1281 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (1/20)
+19/10/21 07:07:01 INFO TaskSetManager: Finished task 9.0 in stage 1.0 (TID 29) in 1290 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (2/20)
+19/10/21 07:07:01 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 23) in 1305 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (3/20)
+19/10/21 07:07:01 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 26) in 1308 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (4/20)
+19/10/21 07:07:01 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-172-31-24-127.us-east-2.compute.internal:42965 in memory (size: 3.1 KB, free: 414.4 MB)
+19/10/21 07:07:01 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-172-31-17-176.us-east-2.compute.internal:42829 in memory (size: 3.1 KB, free: 2.6 GB)
+19/10/21 07:07:01 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-172-31-20-93.us-east-2.compute.internal:36717 in memory (size: 3.1 KB, free: 2.6 GB)
+19/10/21 07:07:01 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-172-31-27-234.us-east-2.compute.internal:33329 in memory (size: 3.1 KB, free: 2.6 GB)
+19/10/21 07:07:01 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-172-31-20-76.us-east-2.compute.internal:34433 in memory (size: 3.1 KB, free: 2.6 GB)
+19/10/21 07:07:01 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-172-31-27-234.us-east-2.compute.internal:46119 in memory (size: 3.1 KB, free: 2.6 GB)
+19/10/21 07:07:01 INFO YarnAllocator: Driver requested a total number of 4 executor(s).
+19/10/21 07:07:01 INFO TaskSetManager: Starting task 16.0 in stage 1.0 (TID 36, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 16, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:01 INFO TaskSetManager: Starting task 17.0 in stage 1.0 (TID 37, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 17, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:01 INFO TaskSetManager: Finished task 13.0 in stage 1.0 (TID 33) in 500 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (5/20)
+19/10/21 07:07:01 INFO TaskSetManager: Finished task 12.0 in stage 1.0 (TID 32) in 505 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (6/20)
+19/10/21 07:07:01 INFO TaskSetManager: Starting task 18.0 in stage 1.0 (TID 38, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 18, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:01 INFO TaskSetManager: Finished task 15.0 in stage 1.0 (TID 35) in 540 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (7/20)
+19/10/21 07:07:01 INFO TaskSetManager: Starting task 19.0 in stage 1.0 (TID 39, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 19, NODE_LOCAL, 7651 bytes)
+19/10/21 07:07:01 INFO TaskSetManager: Finished task 14.0 in stage 1.0 (TID 34) in 652 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (8/20)
+19/10/21 07:07:01 INFO YarnAllocator: Driver requested a total number of 3 executor(s).
+19/10/21 07:07:02 INFO TaskSetManager: Finished task 19.0 in stage 1.0 (TID 39) in 365 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (9/20)
+19/10/21 07:07:02 INFO TaskSetManager: Finished task 18.0 in stage 1.0 (TID 38) in 467 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (10/20)
+19/10/21 07:07:02 INFO TaskSetManager: Finished task 17.0 in stage 1.0 (TID 37) in 536 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (11/20)
+19/10/21 07:07:02 INFO TaskSetManager: Finished task 16.0 in stage 1.0 (TID 36) in 541 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (12/20)
+19/10/21 07:07:02 INFO YarnAllocator: Driver requested a total number of 2 executor(s).
+19/10/21 07:07:03 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 24) in 3137 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (13/20)
+19/10/21 07:07:03 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 21) in 3140 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (14/20)
+19/10/21 07:07:03 INFO TaskSetManager: Finished task 10.0 in stage 1.0 (TID 30) in 3190 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (15/20)
+19/10/21 07:07:03 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 27) in 3215 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (16/20)
+19/10/21 07:07:03 INFO YarnAllocator: Driver requested a total number of 1 executor(s).
+19/10/21 07:07:03 INFO TaskSetManager: Finished task 8.0 in stage 1.0 (TID 28) in 3537 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (17/20)
+19/10/21 07:07:03 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 22) in 3563 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (18/20)
+19/10/21 07:07:03 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 25) in 3680 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (19/20)
+19/10/21 07:07:03 INFO TaskSetManager: Finished task 11.0 in stage 1.0 (TID 31) in 3693 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (20/20)
+19/10/21 07:07:03 INFO YarnClusterScheduler: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+19/10/21 07:07:03 INFO DAGScheduler: ResultStage 1 (collectAsMap at ReplicatedJoin.scala:38) finished in 3.709 s
+19/10/21 07:07:03 INFO DAGScheduler: Job 0 finished: collectAsMap at ReplicatedJoin.scala:38, took 27.933479 s
+19/10/21 07:07:03 INFO YarnAllocator: Driver requested a total number of 0 executor(s).
+19/10/21 07:07:03 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 43.4 MB, free 370.7 MB)
+19/10/21 07:07:04 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 3.9 MB, free 366.8 MB)
+19/10/21 07:07:04 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on ip-172-31-24-127.us-east-2.compute.internal:42965 (size: 3.9 MB, free: 410.5 MB)
+19/10/21 07:07:04 INFO SparkContext: Created broadcast 3 from broadcast at ReplicatedJoin.scala:41
+19/10/21 07:07:04 INFO BlockManagerInfo: Removed broadcast_3_piece0 on ip-172-31-24-127.us-east-2.compute.internal:42965 in memory (size: 3.9 MB, free: 414.4 MB)
+19/10/21 07:07:04 INFO SparkContext: Starting job: count at ReplicatedJoin.scala:51
+19/10/21 07:07:04 INFO DAGScheduler: Registering RDD 6 (mapPartitions at ReplicatedJoin.scala:43)
+19/10/21 07:07:04 INFO DAGScheduler: Registering RDD 3 (map at ReplicatedJoin.scala:37)
+19/10/21 07:07:04 INFO DAGScheduler: Got job 1 (count at ReplicatedJoin.scala:51) with 20 output partitions
+19/10/21 07:07:04 INFO DAGScheduler: Final stage: ResultStage 4 (count at ReplicatedJoin.scala:51)
+19/10/21 07:07:04 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2, ShuffleMapStage 3)
+19/10/21 07:07:04 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 2, ShuffleMapStage 3)
+19/10/21 07:07:04 INFO DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[6] at mapPartitions at ReplicatedJoin.scala:43), which has no missing parents
+19/10/21 07:07:04 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 6.9 MB, free 407.1 MB)
+19/10/21 07:07:05 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 3.9 MB, free 403.2 MB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-172-31-24-127.us-east-2.compute.internal:42965 (size: 3.9 MB, free: 410.5 MB)
+19/10/21 07:07:05 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1201
+19/10/21 07:07:05 INFO DAGScheduler: Submitting 20 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[6] at mapPartitions at ReplicatedJoin.scala:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+19/10/21 07:07:05 INFO YarnClusterScheduler: Adding task set 2.0 with 20 tasks
+19/10/21 07:07:05 INFO DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[3] at map at ReplicatedJoin.scala:37), which has no missing parents
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 40, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 0, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 41, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 1, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 2.0 in stage 2.0 (TID 42, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 2, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 3.0 in stage 2.0 (TID 43, ip-172-31-17-176.us-east-2.compute.internal, executor 5, partition 3, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 4.0 in stage 2.0 (TID 44, ip-172-31-21-2.us-east-2.compute.internal, executor 3, partition 4, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 5.0 in stage 2.0 (TID 45, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 5, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 6.0 in stage 2.0 (TID 46, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 6, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned shuffle 0
+19/10/21 07:07:05 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 4.4 KB, free 403.2 MB)
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 1
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 15
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 4
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 9
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 18
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 14
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 16
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 23
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 36
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 42
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 47
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 2
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 29
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 33
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 5
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 43
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 49
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 24
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 21
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 19
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 26
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 10
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 27
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 0
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 6
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 35
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 13
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 46
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 44
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 28
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 17
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 22
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 31
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 45
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 38
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 39
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 40
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 30
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 7
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 41
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 12
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 25
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 32
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 7.0 in stage 2.0 (TID 47, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 7, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 8.0 in stage 2.0 (TID 48, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 8, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 9.0 in stage 2.0 (TID 49, ip-172-31-17-176.us-east-2.compute.internal, executor 5, partition 9, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 10.0 in stage 2.0 (TID 50, ip-172-31-21-2.us-east-2.compute.internal, executor 3, partition 10, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 11.0 in stage 2.0 (TID 51, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 11, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 12.0 in stage 2.0 (TID 52, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 12, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 13.0 in stage 2.0 (TID 53, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 13, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 14.0 in stage 2.0 (TID 54, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 14, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 15.0 in stage 2.0 (TID 55, ip-172-31-17-176.us-east-2.compute.internal, executor 5, partition 15, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO BlockManagerInfo: Removed broadcast_2_piece0 on ip-172-31-27-234.us-east-2.compute.internal:46119 in memory (size: 3.5 KB, free: 2.6 GB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Removed broadcast_2_piece0 on ip-172-31-20-76.us-east-2.compute.internal:34433 in memory (size: 3.5 KB, free: 2.6 GB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Removed broadcast_2_piece0 on ip-172-31-24-127.us-east-2.compute.internal:42965 in memory (size: 3.5 KB, free: 410.5 MB)
+19/10/21 07:07:05 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.6 KB, free 403.2 MB)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 16.0 in stage 2.0 (TID 56, ip-172-31-21-2.us-east-2.compute.internal, executor 3, partition 16, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 17.0 in stage 2.0 (TID 57, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 17, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 18.0 in stage 2.0 (TID 58, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 18, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO BlockManagerInfo: Removed broadcast_2_piece0 on ip-172-31-27-234.us-east-2.compute.internal:33329 in memory (size: 3.5 KB, free: 2.6 GB)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 19.0 in stage 2.0 (TID 59, ip-172-31-27-234.us-east-2.compute.internal, executor 1, partition 19, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-24-127.us-east-2.compute.internal:42965 (size: 2.6 KB, free: 410.5 MB)
+19/10/21 07:07:05 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1201
+19/10/21 07:07:05 INFO DAGScheduler: Submitting 20 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[3] at map at ReplicatedJoin.scala:37) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+19/10/21 07:07:05 INFO YarnClusterScheduler: Adding task set 3.0 with 20 tasks
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 60, ip-172-31-21-2.us-east-2.compute.internal, executor 3, partition 0, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 61, ip-172-31-27-234.us-east-2.compute.internal, executor 2, partition 1, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 2.0 in stage 3.0 (TID 62, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 2, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO TaskSetManager: Starting task 3.0 in stage 3.0 (TID 63, ip-172-31-17-176.us-east-2.compute.internal, executor 5, partition 3, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-172-31-20-76.us-east-2.compute.internal:34433 (size: 3.9 MB, free: 2.6 GB)
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 37
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 11
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 34
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 20
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 3
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 8
+19/10/21 07:07:05 INFO ContextCleaner: Cleaned accumulator 48
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-172-31-27-234.us-east-2.compute.internal:46119 (size: 3.9 MB, free: 2.6 GB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-172-31-27-234.us-east-2.compute.internal:33329 (size: 3.9 MB, free: 2.6 GB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-27-234.us-east-2.compute.internal:46119 (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-172-31-20-93.us-east-2.compute.internal:36717 (size: 3.9 MB, free: 2.6 GB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-20-93.us-east-2.compute.internal:36717 (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-172-31-17-176.us-east-2.compute.internal:42829 (size: 3.9 MB, free: 2.6 GB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-17-176.us-east-2.compute.internal:42829 (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-172-31-21-2.us-east-2.compute.internal:40585 (size: 3.9 MB, free: 2.6 GB)
+19/10/21 07:07:05 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-21-2.us-east-2.compute.internal:40585 (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:05 INFO YarnAllocator: Driver requested a total number of 7 executor(s).
+19/10/21 07:07:05 INFO YarnAllocator: Will request 1 executor container(s), each with 4 core(s) and 5632 MB memory (including 889 MB of overhead)
+19/10/21 07:07:05 INFO ExecutorAllocationManager: Requesting 7 new executors because tasks are backlogged (new desired total will be 7)
+19/10/21 07:07:05 INFO YarnAllocator: Submitted container request for host *.
+19/10/21 07:07:06 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-21-2.us-east-2.compute.internal:40585 (size: 34.0 KB, free: 2.6 GB)
+19/10/21 07:07:06 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000010 on host ip-172-31-20-93.us-east-2.compute.internal for executor with ID 7
+19/10/21 07:07:06 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 1 of them.
+19/10/21 07:07:06 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:07:06 INFO YarnAllocator: Driver requested a total number of 8 executor(s).
+19/10/21 07:07:06 INFO YarnAllocator: Will request 1 executor container(s), each with 4 core(s) and 5632 MB memory (including 889 MB of overhead)
+19/10/21 07:07:06 INFO ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 8)
+19/10/21 07:07:06 INFO YarnAllocator: Submitted container request for host *.
+19/10/21 07:07:07 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000014 on host ip-172-31-19-97.us-east-2.compute.internal for executor with ID 8
+19/10/21 07:07:07 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 1 of them.
+19/10/21 07:07:07 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:07:07 INFO YarnAllocator: Driver requested a total number of 10 executor(s).
+19/10/21 07:07:07 INFO YarnAllocator: Will request 2 executor container(s), each with 4 core(s) and 5632 MB memory (including 889 MB of overhead)
+19/10/21 07:07:07 INFO ExecutorAllocationManager: Requesting 2 new executors because tasks are backlogged (new desired total will be 10)
+19/10/21 07:07:07 INFO YarnAllocator: Submitted container request for host *.
+19/10/21 07:07:07 INFO YarnAllocator: Submitted container request for host *.
+19/10/21 07:07:08 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000017 on host ip-172-31-16-228.us-east-2.compute.internal for executor with ID 9
+19/10/21 07:07:08 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000018 on host ip-172-31-19-97.us-east-2.compute.internal for executor with ID 10
+19/10/21 07:07:08 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 2 of them.
+19/10/21 07:07:08 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:07:08 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:07:11 INFO AMRMClientImpl: Received new token for : ip-172-31-24-127.us-east-2.compute.internal:8041
+19/10/21 07:07:11 INFO AMRMClientImpl: Received new token for : ip-172-31-21-59.us-east-2.compute.internal:8041
+19/10/21 07:07:11 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 0 of them.
+19/10/21 07:07:11 INFO TaskSetManager: Starting task 4.0 in stage 3.0 (TID 64, ip-172-31-17-176.us-east-2.compute.internal, executor 5, partition 4, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:11 INFO TaskSetManager: Finished task 3.0 in stage 3.0 (TID 63) in 6465 ms on ip-172-31-17-176.us-east-2.compute.internal (executor 5) (1/20)
+19/10/21 07:07:11 INFO TaskSetManager: Starting task 5.0 in stage 3.0 (TID 65, ip-172-31-17-176.us-east-2.compute.internal, executor 5, partition 5, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:11 INFO TaskSetManager: Finished task 15.0 in stage 2.0 (TID 55) in 6719 ms on ip-172-31-17-176.us-east-2.compute.internal (executor 5) (1/20)
+19/10/21 07:07:11 INFO TaskSetManager: Starting task 6.0 in stage 3.0 (TID 66, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 6, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:11 INFO TaskSetManager: Finished task 18.0 in stage 2.0 (TID 58) in 6798 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (2/20)
+19/10/21 07:07:12 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-20-76.us-east-2.compute.internal:34433 (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:12 INFO TaskSetManager: Starting task 7.0 in stage 3.0 (TID 67, ip-172-31-20-76.us-east-2.compute.internal, executor 4, partition 7, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:12 INFO TaskSetManager: Finished task 12.0 in stage 2.0 (TID 52) in 7155 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (3/20)
+19/10/21 07:07:12 INFO YarnAllocator: Driver requested a total number of 9 executor(s).
+19/10/21 07:07:12 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.20.93:36896) with ID 7
+19/10/21 07:07:12 INFO ExecutorAllocationManager: New executor 7 has registered (new total is 7)
+19/10/21 07:07:12 INFO TaskSetManager: Starting task 8.0 in stage 3.0 (TID 68, ip-172-31-20-93.us-east-2.compute.internal, executor 7, partition 8, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:12 INFO TaskSetManager: Starting task 9.0 in stage 3.0 (TID 69, ip-172-31-20-93.us-east-2.compute.internal, executor 7, partition 9, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:12 INFO TaskSetManager: Starting task 10.0 in stage 3.0 (TID 70, ip-172-31-20-93.us-east-2.compute.internal, executor 7, partition 10, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:12 INFO TaskSetManager: Starting task 11.0 in stage 3.0 (TID 71, ip-172-31-20-93.us-east-2.compute.internal, executor 7, partition 11, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:13 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-20-93.us-east-2.compute.internal:44783 with 2.6 GB RAM, BlockManagerId(7, ip-172-31-20-93.us-east-2.compute.internal, 44783, None)
+19/10/21 07:07:13 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.16.228:49814) with ID 9
+19/10/21 07:07:13 INFO ExecutorAllocationManager: New executor 9 has registered (new total is 8)
+19/10/21 07:07:13 INFO TaskSetManager: Starting task 12.0 in stage 3.0 (TID 72, ip-172-31-16-228.us-east-2.compute.internal, executor 9, partition 12, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:13 INFO TaskSetManager: Starting task 13.0 in stage 3.0 (TID 73, ip-172-31-16-228.us-east-2.compute.internal, executor 9, partition 13, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:13 INFO TaskSetManager: Starting task 14.0 in stage 3.0 (TID 74, ip-172-31-16-228.us-east-2.compute.internal, executor 9, partition 14, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:13 INFO TaskSetManager: Starting task 15.0 in stage 3.0 (TID 75, ip-172-31-16-228.us-east-2.compute.internal, executor 9, partition 15, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:13 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-16-228.us-east-2.compute.internal:39193 with 2.6 GB RAM, BlockManagerId(9, ip-172-31-16-228.us-east-2.compute.internal, 39193, None)
+19/10/21 07:07:13 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.19.97:60058) with ID 10
+19/10/21 07:07:13 INFO ExecutorAllocationManager: New executor 10 has registered (new total is 9)
+19/10/21 07:07:13 INFO TaskSetManager: Starting task 16.0 in stage 3.0 (TID 76, ip-172-31-19-97.us-east-2.compute.internal, executor 10, partition 16, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:13 INFO TaskSetManager: Starting task 17.0 in stage 3.0 (TID 77, ip-172-31-19-97.us-east-2.compute.internal, executor 10, partition 17, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:13 INFO TaskSetManager: Starting task 18.0 in stage 3.0 (TID 78, ip-172-31-19-97.us-east-2.compute.internal, executor 10, partition 18, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:13 INFO TaskSetManager: Starting task 19.0 in stage 3.0 (TID 79, ip-172-31-19-97.us-east-2.compute.internal, executor 10, partition 19, RACK_LOCAL, 7875 bytes)
+19/10/21 07:07:13 INFO TaskSetManager: Finished task 3.0 in stage 2.0 (TID 43) in 8923 ms on ip-172-31-17-176.us-east-2.compute.internal (executor 5) (4/20)
+19/10/21 07:07:14 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-20-93.us-east-2.compute.internal:44783 (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:14 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-16-228.us-east-2.compute.internal:39193 (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:14 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.19.97:60060) with ID 8
+19/10/21 07:07:14 INFO ExecutorAllocationManager: New executor 8 has registered (new total is 10)
+19/10/21 07:07:14 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-19-97.us-east-2.compute.internal:42589 with 2.6 GB RAM, BlockManagerId(10, ip-172-31-19-97.us-east-2.compute.internal, 42589, None)
+19/10/21 07:07:14 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-16-228.us-east-2.compute.internal:39193 (size: 34.0 KB, free: 2.6 GB)
+19/10/21 07:07:14 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-19-97.us-east-2.compute.internal:39255 with 2.6 GB RAM, BlockManagerId(8, ip-172-31-19-97.us-east-2.compute.internal, 39255, None)
+19/10/21 07:07:14 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-20-93.us-east-2.compute.internal:44783 (size: 34.0 KB, free: 2.6 GB)
+19/10/21 07:07:14 INFO TaskSetManager: Finished task 17.0 in stage 2.0 (TID 57) in 9545 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (5/20)
+19/10/21 07:07:14 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-19-97.us-east-2.compute.internal:42589 (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:14 INFO TaskSetManager: Finished task 2.0 in stage 3.0 (TID 62) in 9762 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (2/20)
+19/10/21 07:07:14 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-19-97.us-east-2.compute.internal:42589 (size: 34.0 KB, free: 2.6 GB)
+19/10/21 07:07:15 INFO TaskSetManager: Finished task 9.0 in stage 2.0 (TID 49) in 10354 ms on ip-172-31-17-176.us-east-2.compute.internal (executor 5) (6/20)
+19/10/21 07:07:15 INFO TaskSetManager: Finished task 19.0 in stage 2.0 (TID 59) in 10352 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (7/20)
+19/10/21 07:07:15 INFO YarnAllocator: Driver requested a total number of 8 executor(s).
+19/10/21 07:07:15 INFO TaskSetManager: Finished task 4.0 in stage 3.0 (TID 64) in 4065 ms on ip-172-31-17-176.us-east-2.compute.internal (executor 5) (3/20)
+19/10/21 07:07:15 INFO TaskSetManager: Finished task 5.0 in stage 3.0 (TID 65) in 4026 ms on ip-172-31-17-176.us-east-2.compute.internal (executor 5) (4/20)
+19/10/21 07:07:16 INFO TaskSetManager: Finished task 16.0 in stage 2.0 (TID 56) in 11270 ms on ip-172-31-21-2.us-east-2.compute.internal (executor 3) (8/20)
+19/10/21 07:07:16 INFO YarnAllocator: Driver requested a total number of 7 executor(s).
+19/10/21 07:07:16 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 60) in 11667 ms on ip-172-31-21-2.us-east-2.compute.internal (executor 3) (5/20)
+19/10/21 07:07:17 INFO TaskSetManager: Finished task 7.0 in stage 3.0 (TID 67) in 5025 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (6/20)
+19/10/21 07:07:17 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 61) in 12208 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (7/20)
+19/10/21 07:07:17 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 40) in 12277 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (9/20)
+19/10/21 07:07:17 INFO TaskSetManager: Finished task 5.0 in stage 2.0 (TID 45) in 12277 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (10/20)
+19/10/21 07:07:17 INFO TaskSetManager: Finished task 4.0 in stage 2.0 (TID 44) in 12287 ms on ip-172-31-21-2.us-east-2.compute.internal (executor 3) (11/20)
+19/10/21 07:07:17 INFO TaskSetManager: Finished task 6.0 in stage 3.0 (TID 66) in 5480 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (8/20)
+19/10/21 07:07:17 INFO YarnAllocator: Driver requested a total number of 6 executor(s).
+19/10/21 07:07:17 INFO TaskSetManager: Finished task 6.0 in stage 2.0 (TID 46) in 12438 ms on ip-172-31-20-76.us-east-2.compute.internal (executor 4) (12/20)
+19/10/21 07:07:17 INFO YarnAllocator: Driver requested a total number of 5 executor(s).
+19/10/21 07:07:17 INFO TaskSetManager: Finished task 14.0 in stage 2.0 (TID 54) in 12731 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (13/20)
+19/10/21 07:07:17 INFO TaskSetManager: Finished task 13.0 in stage 2.0 (TID 53) in 12780 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (14/20)
+19/10/21 07:07:18 INFO TaskSetManager: Finished task 10.0 in stage 2.0 (TID 50) in 12985 ms on ip-172-31-21-2.us-east-2.compute.internal (executor 3) (15/20)
+19/10/21 07:07:19 INFO TaskSetManager: Finished task 8.0 in stage 2.0 (TID 48) in 14525 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (16/20)
+19/10/21 07:07:19 INFO YarnAllocator: Driver requested a total number of 4 executor(s).
+19/10/21 07:07:20 INFO TaskSetManager: Finished task 2.0 in stage 2.0 (TID 42) in 15515 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 2) (17/20)
+19/10/21 07:07:20 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 41) in 15522 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (18/20)
+19/10/21 07:07:21 INFO TaskSetManager: Finished task 7.0 in stage 2.0 (TID 47) in 15946 ms on ip-172-31-27-234.us-east-2.compute.internal (executor 1) (19/20)
+19/10/21 07:07:21 INFO TaskSetManager: Finished task 19.0 in stage 3.0 (TID 79) in 7991 ms on ip-172-31-19-97.us-east-2.compute.internal (executor 10) (9/20)
+19/10/21 07:07:21 INFO YarnAllocator: Driver requested a total number of 3 executor(s).
+19/10/21 07:07:22 INFO TaskSetManager: Finished task 14.0 in stage 3.0 (TID 74) in 9195 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 9) (10/20)
+19/10/21 07:07:22 INFO TaskSetManager: Finished task 15.0 in stage 3.0 (TID 75) in 9266 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 9) (11/20)
+19/10/21 07:07:22 INFO TaskSetManager: Finished task 13.0 in stage 3.0 (TID 73) in 9323 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 9) (12/20)
+19/10/21 07:07:22 INFO TaskSetManager: Finished task 12.0 in stage 3.0 (TID 72) in 9357 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 9) (13/20)
+19/10/21 07:07:22 INFO YarnAllocator: Driver requested a total number of 2 executor(s).
+19/10/21 07:07:22 INFO TaskSetManager: Finished task 18.0 in stage 3.0 (TID 78) in 9060 ms on ip-172-31-19-97.us-east-2.compute.internal (executor 10) (14/20)
+19/10/21 07:07:22 INFO TaskSetManager: Finished task 17.0 in stage 3.0 (TID 77) in 9092 ms on ip-172-31-19-97.us-east-2.compute.internal (executor 10) (15/20)
+19/10/21 07:07:23 INFO TaskSetManager: Finished task 16.0 in stage 3.0 (TID 76) in 9236 ms on ip-172-31-19-97.us-east-2.compute.internal (executor 10) (16/20)
+19/10/21 07:07:26 INFO TaskSetManager: Finished task 8.0 in stage 3.0 (TID 68) in 13215 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 7) (17/20)
+19/10/21 07:07:26 INFO YarnAllocator: Driver requested a total number of 1 executor(s).
+19/10/21 07:07:26 INFO TaskSetManager: Finished task 10.0 in stage 3.0 (TID 70) in 13878 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 7) (18/20)
+19/10/21 07:07:27 INFO TaskSetManager: Finished task 9.0 in stage 3.0 (TID 69) in 14337 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 7) (19/20)
+19/10/21 07:07:27 INFO TaskSetManager: Finished task 11.0 in stage 3.0 (TID 71) in 14617 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 7) (20/20)
+19/10/21 07:07:27 INFO YarnClusterScheduler: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+19/10/21 07:07:27 INFO DAGScheduler: ShuffleMapStage 3 (map at ReplicatedJoin.scala:37) finished in 22.394 s
+19/10/21 07:07:27 INFO DAGScheduler: looking for newly runnable stages
+19/10/21 07:07:27 INFO DAGScheduler: running: Set(ShuffleMapStage 2)
+19/10/21 07:07:27 INFO DAGScheduler: waiting: Set(ResultStage 4)
+19/10/21 07:07:27 INFO DAGScheduler: failed: Set()
+19/10/21 07:07:29 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-172-31-24-127.us-east-2.compute.internal:42965 in memory (size: 2.6 KB, free: 410.5 MB)
+19/10/21 07:07:29 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-172-31-20-76.us-east-2.compute.internal:34433 in memory (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:29 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-172-31-27-234.us-east-2.compute.internal:46119 in memory (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:29 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-172-31-20-93.us-east-2.compute.internal:36717 in memory (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:29 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-172-31-17-176.us-east-2.compute.internal:42829 in memory (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:29 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-172-31-21-2.us-east-2.compute.internal:40585 in memory (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:29 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-172-31-16-228.us-east-2.compute.internal:39193 in memory (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:29 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-172-31-20-93.us-east-2.compute.internal:44783 in memory (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:07:29 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-172-31-19-97.us-east-2.compute.internal:42589 in memory (size: 2.6 KB, free: 2.6 GB)
+19/10/21 07:08:14 INFO ExecutorAllocationManager: Request to remove executorIds: 8
+19/10/21 07:08:14 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 8
+19/10/21 07:08:14 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 8
+19/10/21 07:08:14 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 8.
+19/10/21 07:08:14 INFO ExecutorAllocationManager: Removing executor 8 because it has been idle for 60 seconds (new desired total will be 9)
+19/10/21 07:08:14 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 8.
+19/10/21 07:08:14 INFO DAGScheduler: Executor lost: 8 (epoch 2)
+19/10/21 07:08:14 INFO BlockManagerMasterEndpoint: Trying to remove executor 8 from BlockManagerMaster.
+19/10/21 07:08:14 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(8, ip-172-31-19-97.us-east-2.compute.internal, 39255, None)
+19/10/21 07:08:14 INFO BlockManagerMaster: Removed 8 successfully in removeExecutor
+19/10/21 07:08:14 INFO YarnClusterScheduler: Executor 8 on ip-172-31-19-97.us-east-2.compute.internal killed by driver.
+19/10/21 07:08:14 INFO ExecutorAllocationManager: Existing executor 8 has been removed (new total is 9)
+19/10/21 07:08:15 INFO ExecutorAllocationManager: Request to remove executorIds: 5
+19/10/21 07:08:15 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 5
+19/10/21 07:08:15 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 5
+19/10/21 07:08:15 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 5.
+19/10/21 07:08:15 INFO ExecutorAllocationManager: Removing executor 5 because it has been idle for 60 seconds (new desired total will be 8)
+19/10/21 07:08:17 INFO ExecutorAllocationManager: Request to remove executorIds: 4
+19/10/21 07:08:17 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 4
+19/10/21 07:08:17 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 4
+19/10/21 07:08:17 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 4.
+19/10/21 07:08:17 INFO ExecutorAllocationManager: Removing executor 4 because it has been idle for 60 seconds (new desired total will be 7)
+19/10/21 07:08:18 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 5.
+19/10/21 07:08:18 INFO DAGScheduler: Executor lost: 5 (epoch 2)
+19/10/21 07:08:18 INFO BlockManagerMasterEndpoint: Trying to remove executor 5 from BlockManagerMaster.
+19/10/21 07:08:18 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(5, ip-172-31-17-176.us-east-2.compute.internal, 42829, None)
+19/10/21 07:08:18 INFO YarnClusterScheduler: Executor 5 on ip-172-31-17-176.us-east-2.compute.internal killed by driver.
+19/10/21 07:08:18 INFO BlockManagerMaster: Removed 5 successfully in removeExecutor
+19/10/21 07:08:18 INFO ExecutorAllocationManager: Existing executor 5 has been removed (new total is 8)
+19/10/21 07:08:18 INFO ExecutorAllocationManager: Request to remove executorIds: 3
+19/10/21 07:08:18 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 3
+19/10/21 07:08:18 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 3
+19/10/21 07:08:18 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 3.
+19/10/21 07:08:18 INFO ExecutorAllocationManager: Removing executor 3 because it has been idle for 60 seconds (new desired total will be 6)
+19/10/21 07:08:19 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 4.
+19/10/21 07:08:19 INFO DAGScheduler: Executor lost: 4 (epoch 2)
+19/10/21 07:08:19 INFO BlockManagerMasterEndpoint: Trying to remove executor 4 from BlockManagerMaster.
+19/10/21 07:08:19 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(4, ip-172-31-20-76.us-east-2.compute.internal, 34433, None)
+19/10/21 07:08:19 INFO BlockManagerMaster: Removed 4 successfully in removeExecutor
+19/10/21 07:08:19 INFO YarnClusterScheduler: Executor 4 on ip-172-31-20-76.us-east-2.compute.internal killed by driver.
+19/10/21 07:08:19 INFO ExecutorAllocationManager: Existing executor 4 has been removed (new total is 7)
+19/10/21 07:08:20 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 3.
+19/10/21 07:08:20 INFO DAGScheduler: Executor lost: 3 (epoch 2)
+19/10/21 07:08:20 INFO BlockManagerMasterEndpoint: Trying to remove executor 3 from BlockManagerMaster.
+19/10/21 07:08:20 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(3, ip-172-31-21-2.us-east-2.compute.internal, 40585, None)
+19/10/21 07:08:20 INFO BlockManagerMaster: Removed 3 successfully in removeExecutor
+19/10/21 07:08:20 INFO YarnClusterScheduler: Executor 3 on ip-172-31-21-2.us-east-2.compute.internal killed by driver.
+19/10/21 07:08:20 INFO ExecutorAllocationManager: Existing executor 3 has been removed (new total is 6)
+19/10/21 07:08:20 INFO ExecutorAllocationManager: Request to remove executorIds: 2
+19/10/21 07:08:20 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 2
+19/10/21 07:08:20 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 2
+19/10/21 07:08:20 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 2.
+19/10/21 07:08:20 INFO ExecutorAllocationManager: Removing executor 2 because it has been idle for 60 seconds (new desired total will be 5)
+19/10/21 07:08:21 INFO ExecutorAllocationManager: Request to remove executorIds: 1
+19/10/21 07:08:21 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 1
+19/10/21 07:08:21 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 1
+19/10/21 07:08:21 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 1.
+19/10/21 07:08:21 INFO ExecutorAllocationManager: Removing executor 1 because it has been idle for 60 seconds (new desired total will be 4)
+19/10/21 07:08:22 INFO ExecutorAllocationManager: Request to remove executorIds: 9
+19/10/21 07:08:22 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 9
+19/10/21 07:08:22 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 9
+19/10/21 07:08:22 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 9.
+19/10/21 07:08:22 INFO ExecutorAllocationManager: Removing executor 9 because it has been idle for 60 seconds (new desired total will be 3)
+19/10/21 07:08:23 INFO ExecutorAllocationManager: Request to remove executorIds: 10
+19/10/21 07:08:23 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 10
+19/10/21 07:08:23 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 10
+19/10/21 07:08:23 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 10.
+19/10/21 07:08:23 INFO ExecutorAllocationManager: Removing executor 10 because it has been idle for 60 seconds (new desired total will be 2)
+19/10/21 07:08:23 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 9.
+19/10/21 07:08:23 INFO DAGScheduler: Executor lost: 9 (epoch 2)
+19/10/21 07:08:23 INFO BlockManagerMasterEndpoint: Trying to remove executor 9 from BlockManagerMaster.
+19/10/21 07:08:23 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(9, ip-172-31-16-228.us-east-2.compute.internal, 39193, None)
+19/10/21 07:08:23 INFO BlockManagerMaster: Removed 9 successfully in removeExecutor
+19/10/21 07:08:23 INFO YarnClusterScheduler: Executor 9 on ip-172-31-16-228.us-east-2.compute.internal killed by driver.
+19/10/21 07:08:23 INFO ExecutorAllocationManager: Existing executor 9 has been removed (new total is 5)
+19/10/21 07:08:24 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 1.
+19/10/21 07:08:24 INFO DAGScheduler: Executor lost: 1 (epoch 2)
+19/10/21 07:08:24 INFO BlockManagerMasterEndpoint: Trying to remove executor 1 from BlockManagerMaster.
+19/10/21 07:08:24 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(1, ip-172-31-27-234.us-east-2.compute.internal, 33329, None)
+19/10/21 07:08:24 INFO YarnClusterScheduler: Executor 1 on ip-172-31-27-234.us-east-2.compute.internal killed by driver.
+19/10/21 07:08:24 INFO BlockManagerMaster: Removed 1 successfully in removeExecutor
+19/10/21 07:08:24 INFO ExecutorAllocationManager: Existing executor 1 has been removed (new total is 4)
+19/10/21 07:08:24 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 2.
+19/10/21 07:08:24 INFO DAGScheduler: Executor lost: 2 (epoch 2)
+19/10/21 07:08:24 INFO BlockManagerMasterEndpoint: Trying to remove executor 2 from BlockManagerMaster.
+19/10/21 07:08:24 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(2, ip-172-31-27-234.us-east-2.compute.internal, 46119, None)
+19/10/21 07:08:24 INFO YarnClusterScheduler: Executor 2 on ip-172-31-27-234.us-east-2.compute.internal killed by driver.
+19/10/21 07:08:24 INFO BlockManagerMaster: Removed 2 successfully in removeExecutor
+19/10/21 07:08:24 INFO ExecutorAllocationManager: Existing executor 2 has been removed (new total is 3)
+19/10/21 07:08:24 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 10.
+19/10/21 07:08:24 INFO DAGScheduler: Executor lost: 10 (epoch 2)
+19/10/21 07:08:24 INFO YarnClusterScheduler: Executor 10 on ip-172-31-19-97.us-east-2.compute.internal killed by driver.
+19/10/21 07:08:24 INFO BlockManagerMasterEndpoint: Trying to remove executor 10 from BlockManagerMaster.
+19/10/21 07:08:24 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(10, ip-172-31-19-97.us-east-2.compute.internal, 42589, None)
+19/10/21 07:08:24 INFO BlockManagerMaster: Removed 10 successfully in removeExecutor
+19/10/21 07:08:24 INFO ExecutorAllocationManager: Existing executor 10 has been removed (new total is 2)
+19/10/21 07:08:27 INFO ExecutorAllocationManager: Request to remove executorIds: 7
+19/10/21 07:08:27 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 7
+19/10/21 07:08:27 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 7
+19/10/21 07:08:27 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 7.
+19/10/21 07:08:27 INFO ExecutorAllocationManager: Removing executor 7 because it has been idle for 60 seconds (new desired total will be 1)
+19/10/21 07:08:31 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 7.
+19/10/21 07:08:31 INFO DAGScheduler: Executor lost: 7 (epoch 2)
+19/10/21 07:08:31 INFO BlockManagerMasterEndpoint: Trying to remove executor 7 from BlockManagerMaster.
+19/10/21 07:08:31 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(7, ip-172-31-20-93.us-east-2.compute.internal, 44783, None)
+19/10/21 07:08:31 INFO YarnClusterScheduler: Executor 7 on ip-172-31-20-93.us-east-2.compute.internal killed by driver.
+19/10/21 07:08:31 INFO BlockManagerMaster: Removed 7 successfully in removeExecutor
+19/10/21 07:08:31 INFO ExecutorAllocationManager: Existing executor 7 has been removed (new total is 1)
+19/10/21 07:09:59 INFO TaskSetManager: Finished task 11.0 in stage 2.0 (TID 51) in 174240 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (20/20)
+19/10/21 07:09:59 INFO YarnClusterScheduler: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+19/10/21 07:09:59 INFO DAGScheduler: ShuffleMapStage 2 (mapPartitions at ReplicatedJoin.scala:43) finished in 174.626 s
+19/10/21 07:09:59 INFO DAGScheduler: looking for newly runnable stages
+19/10/21 07:09:59 INFO DAGScheduler: running: Set()
+19/10/21 07:09:59 INFO DAGScheduler: waiting: Set(ResultStage 4)
+19/10/21 07:09:59 INFO DAGScheduler: failed: Set()
+19/10/21 07:09:59 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[10] at filter at ReplicatedJoin.scala:51), which has no missing parents
+19/10/21 07:09:59 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 3.4 KB, free 403.2 MB)
+19/10/21 07:09:59 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 2009.0 B, free 403.2 MB)
+19/10/21 07:09:59 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-24-127.us-east-2.compute.internal:42965 (size: 2009.0 B, free: 410.5 MB)
+19/10/21 07:09:59 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1201
+19/10/21 07:09:59 INFO DAGScheduler: Submitting 20 missing tasks from ResultStage 4 (MapPartitionsRDD[10] at filter at ReplicatedJoin.scala:51) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+19/10/21 07:09:59 INFO YarnClusterScheduler: Adding task set 4.0 with 20 tasks
+19/10/21 07:09:59 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 80, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 0, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:09:59 INFO TaskSetManager: Starting task 1.0 in stage 4.0 (TID 81, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 1, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:09:59 INFO TaskSetManager: Starting task 2.0 in stage 4.0 (TID 82, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 2, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:09:59 INFO TaskSetManager: Starting task 3.0 in stage 4.0 (TID 83, ip-172-31-20-93.us-east-2.compute.internal, executor 6, partition 3, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:09:59 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-20-93.us-east-2.compute.internal:36717 (size: 2009.0 B, free: 2.6 GB)
+19/10/21 07:09:59 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 172.31.20.93:36836
+19/10/21 07:09:59 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 172.31.20.93:36836
+19/10/21 07:10:00 INFO YarnAllocator: Driver requested a total number of 2 executor(s).
+19/10/21 07:10:00 INFO YarnAllocator: Will request 1 executor container(s), each with 4 core(s) and 5632 MB memory (including 889 MB of overhead)
+19/10/21 07:10:00 INFO ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 2)
+19/10/21 07:10:00 INFO YarnAllocator: Submitted 1 unlocalized container requests.
+19/10/21 07:10:00 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000021 on host ip-172-31-16-228.us-east-2.compute.internal for executor with ID 11
+19/10/21 07:10:00 INFO YarnAllocator: Received 1 containers from YARN, launching executors on 1 of them.
+19/10/21 07:10:00 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:10:01 INFO YarnAllocator: Driver requested a total number of 4 executor(s).
+19/10/21 07:10:01 INFO YarnAllocator: Will request 2 executor container(s), each with 4 core(s) and 5632 MB memory (including 889 MB of overhead)
+19/10/21 07:10:01 INFO ExecutorAllocationManager: Requesting 2 new executors because tasks are backlogged (new desired total will be 4)
+19/10/21 07:10:01 INFO YarnAllocator: Submitted 2 unlocalized container requests.
+19/10/21 07:10:01 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000022 on host ip-172-31-16-228.us-east-2.compute.internal for executor with ID 12
+19/10/21 07:10:01 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000023 on host ip-172-31-20-93.us-east-2.compute.internal for executor with ID 13
+19/10/21 07:10:01 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 2 of them.
+19/10/21 07:10:01 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:10:01 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:10:02 INFO YarnAllocator: Driver requested a total number of 5 executor(s).
+19/10/21 07:10:02 INFO YarnAllocator: Will request 1 executor container(s), each with 4 core(s) and 5632 MB memory (including 889 MB of overhead)
+19/10/21 07:10:02 INFO ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 5)
+19/10/21 07:10:02 INFO YarnAllocator: Submitted 1 unlocalized container requests.
+19/10/21 07:10:02 INFO YarnAllocator: Launching container container_1571641511250_0001_01_000025 on host ip-172-31-19-97.us-east-2.compute.internal for executor with ID 14
+19/10/21 07:10:02 INFO YarnAllocator: Received 1 containers from YARN, launching executors on 1 of them.
+19/10/21 07:10:02 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/10/21 07:10:04 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.16.228:49886) with ID 11
+19/10/21 07:10:04 INFO ExecutorAllocationManager: New executor 11 has registered (new total is 2)
+19/10/21 07:10:04 INFO TaskSetManager: Starting task 4.0 in stage 4.0 (TID 84, ip-172-31-16-228.us-east-2.compute.internal, executor 11, partition 4, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:04 INFO TaskSetManager: Starting task 5.0 in stage 4.0 (TID 85, ip-172-31-16-228.us-east-2.compute.internal, executor 11, partition 5, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:04 INFO TaskSetManager: Starting task 6.0 in stage 4.0 (TID 86, ip-172-31-16-228.us-east-2.compute.internal, executor 11, partition 6, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:04 INFO TaskSetManager: Starting task 7.0 in stage 4.0 (TID 87, ip-172-31-16-228.us-east-2.compute.internal, executor 11, partition 7, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:04 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-16-228.us-east-2.compute.internal:35983 with 2.6 GB RAM, BlockManagerId(11, ip-172-31-16-228.us-east-2.compute.internal, 35983, None)
+19/10/21 07:10:05 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-16-228.us-east-2.compute.internal:35983 (size: 2009.0 B, free: 2.6 GB)
+19/10/21 07:10:05 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 172.31.16.228:49886
+19/10/21 07:10:05 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 172.31.16.228:49886
+19/10/21 07:10:05 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.19.97:60132) with ID 14
+19/10/21 07:10:05 INFO ExecutorAllocationManager: New executor 14 has registered (new total is 3)
+19/10/21 07:10:05 INFO TaskSetManager: Starting task 8.0 in stage 4.0 (TID 88, ip-172-31-19-97.us-east-2.compute.internal, executor 14, partition 8, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:05 INFO TaskSetManager: Starting task 9.0 in stage 4.0 (TID 89, ip-172-31-19-97.us-east-2.compute.internal, executor 14, partition 9, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:05 INFO TaskSetManager: Starting task 10.0 in stage 4.0 (TID 90, ip-172-31-19-97.us-east-2.compute.internal, executor 14, partition 10, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:05 INFO TaskSetManager: Starting task 11.0 in stage 4.0 (TID 91, ip-172-31-19-97.us-east-2.compute.internal, executor 14, partition 11, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:05 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-19-97.us-east-2.compute.internal:45931 with 2.6 GB RAM, BlockManagerId(14, ip-172-31-19-97.us-east-2.compute.internal, 45931, None)
+19/10/21 07:10:06 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-19-97.us-east-2.compute.internal:45931 (size: 2009.0 B, free: 2.6 GB)
+19/10/21 07:10:06 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.16.228:49894) with ID 12
+19/10/21 07:10:06 INFO ExecutorAllocationManager: New executor 12 has registered (new total is 4)
+19/10/21 07:10:06 INFO TaskSetManager: Starting task 12.0 in stage 4.0 (TID 92, ip-172-31-16-228.us-east-2.compute.internal, executor 12, partition 12, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:06 INFO TaskSetManager: Starting task 13.0 in stage 4.0 (TID 93, ip-172-31-16-228.us-east-2.compute.internal, executor 12, partition 13, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:06 INFO TaskSetManager: Starting task 14.0 in stage 4.0 (TID 94, ip-172-31-16-228.us-east-2.compute.internal, executor 12, partition 14, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:06 INFO TaskSetManager: Starting task 15.0 in stage 4.0 (TID 95, ip-172-31-16-228.us-east-2.compute.internal, executor 12, partition 15, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:06 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 172.31.19.97:60132
+19/10/21 07:10:06 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 172.31.19.97:60132
+19/10/21 07:10:07 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-16-228.us-east-2.compute.internal:45273 with 2.6 GB RAM, BlockManagerId(12, ip-172-31-16-228.us-east-2.compute.internal, 45273, None)
+19/10/21 07:10:08 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-16-228.us-east-2.compute.internal:45273 (size: 2009.0 B, free: 2.6 GB)
+19/10/21 07:10:08 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.20.93:36974) with ID 13
+19/10/21 07:10:08 INFO ExecutorAllocationManager: New executor 13 has registered (new total is 5)
+19/10/21 07:10:08 INFO TaskSetManager: Starting task 16.0 in stage 4.0 (TID 96, ip-172-31-20-93.us-east-2.compute.internal, executor 13, partition 16, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:08 INFO TaskSetManager: Starting task 17.0 in stage 4.0 (TID 97, ip-172-31-20-93.us-east-2.compute.internal, executor 13, partition 17, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:08 INFO TaskSetManager: Starting task 18.0 in stage 4.0 (TID 98, ip-172-31-20-93.us-east-2.compute.internal, executor 13, partition 18, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:08 INFO TaskSetManager: Starting task 19.0 in stage 4.0 (TID 99, ip-172-31-20-93.us-east-2.compute.internal, executor 13, partition 19, PROCESS_LOCAL, 7741 bytes)
+19/10/21 07:10:08 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 172.31.16.228:49894
+19/10/21 07:10:08 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-20-93.us-east-2.compute.internal:43161 with 2.6 GB RAM, BlockManagerId(13, ip-172-31-20-93.us-east-2.compute.internal, 43161, None)
+19/10/21 07:10:08 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 172.31.16.228:49894
+19/10/21 07:10:09 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-20-93.us-east-2.compute.internal:43161 (size: 2009.0 B, free: 2.6 GB)
+19/10/21 07:10:09 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 172.31.20.93:36974
+19/10/21 07:10:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 172.31.20.93:36974
+19/10/21 07:20:29 INFO TaskSetManager: Finished task 9.0 in stage 4.0 (TID 89) in 623926 ms on ip-172-31-19-97.us-east-2.compute.internal (executor 14) (1/20)
+19/10/21 07:22:40 INFO TaskSetManager: Finished task 10.0 in stage 4.0 (TID 90) in 755081 ms on ip-172-31-19-97.us-east-2.compute.internal (executor 14) (2/20)
+19/10/21 07:23:21 INFO TaskSetManager: Finished task 8.0 in stage 4.0 (TID 88) in 796042 ms on ip-172-31-19-97.us-east-2.compute.internal (executor 14) (3/20)
+19/10/21 07:27:20 INFO TaskSetManager: Finished task 17.0 in stage 4.0 (TID 97) in 1032065 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 13) (4/20)
+19/10/21 07:27:20 INFO YarnAllocator: Driver requested a total number of 4 executor(s).
+19/10/21 07:28:37 INFO TaskSetManager: Finished task 16.0 in stage 4.0 (TID 96) in 1109362 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 13) (5/20)
+19/10/21 07:29:29 INFO TaskSetManager: Finished task 11.0 in stage 4.0 (TID 91) in 1163781 ms on ip-172-31-19-97.us-east-2.compute.internal (executor 14) (6/20)
+19/10/21 07:29:49 INFO TaskSetManager: Finished task 3.0 in stage 4.0 (TID 83) in 1190371 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (7/20)
+19/10/21 07:30:07 INFO TaskSetManager: Finished task 19.0 in stage 4.0 (TID 99) in 1199697 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 13) (8/20)
+19/10/21 07:30:07 INFO YarnAllocator: Driver requested a total number of 3 executor(s).
+19/10/21 07:30:29 INFO ExecutorAllocationManager: Request to remove executorIds: 14
+19/10/21 07:30:29 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 14
+19/10/21 07:30:29 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 14
+19/10/21 07:30:29 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 14.
+19/10/21 07:30:29 INFO ExecutorAllocationManager: Removing executor 14 because it has been idle for 60 seconds (new desired total will be 4)
+19/10/21 07:30:32 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 14.
+19/10/21 07:30:32 INFO DAGScheduler: Executor lost: 14 (epoch 3)
+19/10/21 07:30:32 INFO BlockManagerMasterEndpoint: Trying to remove executor 14 from BlockManagerMaster.
+19/10/21 07:30:32 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(14, ip-172-31-19-97.us-east-2.compute.internal, 45931, None)
+19/10/21 07:30:32 INFO YarnClusterScheduler: Executor 14 on ip-172-31-19-97.us-east-2.compute.internal killed by driver.
+19/10/21 07:30:32 INFO BlockManagerMaster: Removed 14 successfully in removeExecutor
+19/10/21 07:30:32 INFO ExecutorAllocationManager: Existing executor 14 has been removed (new total is 4)
+19/10/21 07:31:14 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 80) in 1274771 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (9/20)
+19/10/21 07:32:23 INFO TaskSetManager: Finished task 18.0 in stage 4.0 (TID 98) in 1335228 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 13) (10/20)
+19/10/21 07:33:23 INFO ExecutorAllocationManager: Request to remove executorIds: 13
+19/10/21 07:33:23 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 13
+19/10/21 07:33:23 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 13
+19/10/21 07:33:23 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 13.
+19/10/21 07:33:23 INFO ExecutorAllocationManager: Removing executor 13 because it has been idle for 60 seconds (new desired total will be 3)
+19/10/21 07:33:24 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 13.
+19/10/21 07:33:24 INFO DAGScheduler: Executor lost: 13 (epoch 3)
+19/10/21 07:33:24 INFO BlockManagerMasterEndpoint: Trying to remove executor 13 from BlockManagerMaster.
+19/10/21 07:33:24 INFO YarnClusterScheduler: Executor 13 on ip-172-31-20-93.us-east-2.compute.internal killed by driver.
+19/10/21 07:33:24 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(13, ip-172-31-20-93.us-east-2.compute.internal, 43161, None)
+19/10/21 07:33:24 INFO BlockManagerMaster: Removed 13 successfully in removeExecutor
+19/10/21 07:33:24 INFO ExecutorAllocationManager: Existing executor 13 has been removed (new total is 3)
+19/10/21 07:36:25 INFO TaskSetManager: Finished task 2.0 in stage 4.0 (TID 82) in 1585934 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (11/20)
+19/10/21 07:36:32 INFO BlockManagerInfo: Removed broadcast_4_piece0 on ip-172-31-24-127.us-east-2.compute.internal:42965 in memory (size: 3.9 MB, free: 414.4 MB)
+19/10/21 07:36:32 INFO BlockManagerInfo: Removed broadcast_4_piece0 on ip-172-31-20-93.us-east-2.compute.internal:36717 in memory (size: 3.9 MB, free: 2.6 GB)
+19/10/21 07:37:30 INFO TaskSetManager: Finished task 12.0 in stage 4.0 (TID 92) in 1643749 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 12) (12/20)
+19/10/21 07:37:30 INFO YarnAllocator: Driver requested a total number of 2 executor(s).
+19/10/21 07:38:59 INFO TaskSetManager: Finished task 5.0 in stage 4.0 (TID 85) in 1735128 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 11) (13/20)
+19/10/21 07:40:05 INFO TaskSetManager: Finished task 13.0 in stage 4.0 (TID 93) in 1799006 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 12) (14/20)
+19/10/21 07:40:45 INFO TaskSetManager: Finished task 14.0 in stage 4.0 (TID 94) in 1839098 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 12) (15/20)
+19/10/21 07:40:58 INFO TaskSetManager: Finished task 4.0 in stage 4.0 (TID 84) in 1854220 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 11) (16/20)
+19/10/21 07:40:58 INFO YarnAllocator: Driver requested a total number of 1 executor(s).
+19/10/21 07:41:51 INFO TaskSetManager: Finished task 6.0 in stage 4.0 (TID 86) in 1907045 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 11) (17/20)
+19/10/21 07:41:55 INFO TaskSetManager: Finished task 15.0 in stage 4.0 (TID 95) in 1908706 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 12) (18/20)
+19/10/21 07:42:52 INFO TaskSetManager: Finished task 7.0 in stage 4.0 (TID 87) in 1967583 ms on ip-172-31-16-228.us-east-2.compute.internal (executor 11) (19/20)
+19/10/21 07:42:55 INFO ExecutorAllocationManager: Request to remove executorIds: 12
+19/10/21 07:42:55 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 12
+19/10/21 07:42:55 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 12
+19/10/21 07:42:55 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 12.
+19/10/21 07:42:55 INFO ExecutorAllocationManager: Removing executor 12 because it has been idle for 60 seconds (new desired total will be 2)
+19/10/21 07:42:57 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 12.
+19/10/21 07:42:57 INFO DAGScheduler: Executor lost: 12 (epoch 3)
+19/10/21 07:42:57 INFO BlockManagerMasterEndpoint: Trying to remove executor 12 from BlockManagerMaster.
+19/10/21 07:42:57 INFO YarnClusterScheduler: Executor 12 on ip-172-31-16-228.us-east-2.compute.internal killed by driver.
+19/10/21 07:42:57 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(12, ip-172-31-16-228.us-east-2.compute.internal, 45273, None)
+19/10/21 07:42:57 INFO ExecutorAllocationManager: Existing executor 12 has been removed (new total is 2)
+19/10/21 07:42:57 INFO BlockManagerMaster: Removed 12 successfully in removeExecutor
+19/10/21 07:43:52 INFO ExecutorAllocationManager: Request to remove executorIds: 11
+19/10/21 07:43:52 INFO YarnClusterSchedulerBackend: Requesting to kill executor(s) 11
+19/10/21 07:43:52 INFO YarnClusterSchedulerBackend: Actual list of executor(s) to be killed is 11
+19/10/21 07:43:52 INFO ApplicationMaster$AMEndpoint: Driver requested to kill executor(s) 11.
+19/10/21 07:43:52 INFO ExecutorAllocationManager: Removing executor 11 because it has been idle for 60 seconds (new desired total will be 1)
+19/10/21 07:43:55 INFO YarnSchedulerBackend$YarnDriverEndpoint: Disabling executor 11.
+19/10/21 07:43:55 INFO DAGScheduler: Executor lost: 11 (epoch 3)
+19/10/21 07:43:55 INFO BlockManagerMasterEndpoint: Trying to remove executor 11 from BlockManagerMaster.
+19/10/21 07:43:55 INFO YarnClusterScheduler: Executor 11 on ip-172-31-16-228.us-east-2.compute.internal killed by driver.
+19/10/21 07:43:55 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(11, ip-172-31-16-228.us-east-2.compute.internal, 35983, None)
+19/10/21 07:43:55 INFO BlockManagerMaster: Removed 11 successfully in removeExecutor
+19/10/21 07:43:55 INFO ExecutorAllocationManager: Existing executor 11 has been removed (new total is 1)
+19/10/21 07:44:54 INFO TaskSetManager: Finished task 1.0 in stage 4.0 (TID 81) in 2095077 ms on ip-172-31-20-93.us-east-2.compute.internal (executor 6) (20/20)
+19/10/21 07:44:54 INFO YarnClusterScheduler: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+19/10/21 07:44:54 INFO DAGScheduler: ResultStage 4 (count at ReplicatedJoin.scala:51) finished in 2095.086 s
+19/10/21 07:44:54 INFO DAGScheduler: Job 1 finished: count at ReplicatedJoin.scala:51, took 2269.723078 s
+19/10/21 07:44:54 INFO ApplicationMaster: Final app status: SUCCEEDED, exitCode: 0
+19/10/21 07:44:54 INFO SparkContext: Invoking stop() from shutdown hook
+19/10/21 07:44:54 INFO SparkUI: Stopped Spark web UI at http://ip-172-31-24-127.us-east-2.compute.internal:46123
+19/10/21 07:44:54 INFO YarnAllocator: Driver requested a total number of 0 executor(s).
+19/10/21 07:44:54 INFO YarnClusterSchedulerBackend: Shutting down all executors
+19/10/21 07:44:54 INFO YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+19/10/21 07:44:54 INFO SchedulerExtensionServices: Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+19/10/21 07:44:54 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+19/10/21 07:44:54 INFO MemoryStore: MemoryStore cleared
+19/10/21 07:44:54 INFO BlockManager: BlockManager stopped
+19/10/21 07:44:54 INFO BlockManagerMaster: BlockManagerMaster stopped
+19/10/21 07:44:54 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+19/10/21 07:44:54 INFO SparkContext: Successfully stopped SparkContext
+19/10/21 07:44:54 INFO ApplicationMaster: Unregistering ApplicationMaster with SUCCEEDED
+19/10/21 07:44:54 INFO AMRMClientImpl: Waiting for application to be successfully unregistered.
+19/10/21 07:44:54 INFO ApplicationMaster: Deleting staging directory hdfs://ip-172-31-25-244.us-east-2.compute.internal:8020/user/hadoop/.sparkStaging/application_1571641511250_0001
+19/10/21 07:44:54 INFO ShutdownHookManager: Shutdown hook called
+19/10/21 07:44:54 INFO ShutdownHookManager: Deleting directory /mnt1/yarn/usercache/hadoop/appcache/application_1571641511250_0001/spark-b4d9f319-e96a-4bf9-bd4c-45f4dc5f854d
+19/10/21 07:44:54 INFO ShutdownHookManager: Deleting directory /mnt/yarn/usercache/hadoop/appcache/application_1571641511250_0001/spark-547c137f-1059-4262-a10a-9923a71394e0

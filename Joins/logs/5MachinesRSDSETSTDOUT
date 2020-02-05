@@ -1,0 +1,16 @@
+== Physical Plan ==
+*(5) SerializeFromObject [assertnotnull(input[0, rs.ReduceSide$TwitterData, true]).Follower AS Follower#19L, assertnotnull(input[0, rs.ReduceSide$TwitterData, true]).Followed AS Followed#20L]
++- *(5) MapElements <function1>, obj#18: rs.ReduceSide$TwitterData
+   +- *(5) DeserializeToObject createexternalrow(Follower#3L, Followed#4L, Followed#10L, StructField(Follower,LongType,false), StructField(Followed,LongType,false), StructField(Followed,LongType,false)), obj#17: org.apache.spark.sql.Row
+      +- *(5) Project [Follower#3L, Followed#4L, Followed#10L]
+         +- *(5) SortMergeJoin [Follower#3L], [Follower#9L], Inner
+            :- *(2) Sort [Follower#3L ASC NULLS FIRST], false, 0
+            :  +- Exchange hashpartitioning(Follower#3L, 200)
+            :     +- *(1) SerializeFromObject [assertnotnull(input[0, rs.ReduceSide$TwitterData, true]).Follower AS Follower#3L, assertnotnull(input[0, rs.ReduceSide$TwitterData, true]).Followed AS Followed#4L]
+            :        +- Scan[obj#2]
+            +- *(4) Sort [Follower#9L ASC NULLS FIRST], false, 0
+               +- Exchange hashpartitioning(Follower#9L, 200)
+                  +- *(3) SerializeFromObject [assertnotnull(input[0, rs.ReduceSide$TwitterData, true]).Follower AS Follower#9L, assertnotnull(input[0, rs.ReduceSide$TwitterData, true]).Followed AS Followed#10L]
+                     +- Scan[obj#8]
+Triangle Count with MAX_FILTER:70000:28282537
+Triangle Count With MAX_FILTER: 70000 : 28282537
